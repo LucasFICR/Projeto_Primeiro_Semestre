@@ -15,7 +15,7 @@ h6 {
 }
 .divider {
   width: 76%;
-  height: 3px;
+  height: 2px;
   margin-left: 12%;
   background-image: linear-gradient(270deg, #8425c8, #00dcf5);
 }
@@ -23,6 +23,9 @@ h6 {
   text-transform: initial;
   border-radius: 0 25px 0 25px;
   background: linear-gradient(320deg, #b668ffd0, #2e5cb3);
+}
+.btn #artigo1 {
+  background-color: #2e5cb3 !important;
 }
 #scroll-nav {
   height: 80px;
@@ -156,19 +159,37 @@ header {
 
 #top-ilustração img {
   position: relative;
-  top: 50px;
+  top: 25px
 }
 #intro h1 {
-  color: #0db6d4;
+  color: #def1f5;
   text-shadow: royalblue 2px 3px;
+  text-align: center;
+  margin: 5% 15%;
 }
 #intro p {
   font-size: 20px;
-  text-align: right;
+  text-align: center;
   max-width: 750px;
   color: #e7e7e7;
+  margin: 5% 15%;
 }
 #intro p:hover {
   font-weight: 500;
   color: #f8f8f8;
+  
+}
+/*FOOTER*/
+#redes-sociais img{
+  width: 40px;
+  
+}
+dt{
+  font-family: Alatsi;
+  font-size: 18px;
+  color: #8425c8
+}
+dd{
+  margin-top: 0;
+
 }

@@ -120,7 +120,7 @@
         </ul>       
         <!--NAV DESKTOP-->
         <div class="row">
-          <div class="col m6 offset-m1  hide-on-med-and-down">
+          <div class="col m7 offset-m1 hide-on-med-and-down">
               <ul id="nav-mobile" class="left">
                 <li><a href="#">ARTIGOS</a></li>
                 <li><a href="#">PROFISSIONAIS</a></li>
@@ -181,8 +181,9 @@ background-size: 150% 300%;" >
 <!--Article-->
 <article>
 <div class="article-header" style="background-color: #f8f7ff;">
-  <header><h2 style="text-shadow: rgb(68, 6, 167) 2px 3px; color:#8425c8 ;">Artigos</h2>
-  </header>
+    <div class="row" style="background: linear-gradient(270deg, #00dcf5, #b151f5); height: 150px" >
+        <header><h2 class="center" style="color: white"> ARTIGOS</h2></header>
+      </div>
   <div class="row">
       <div class="col s10 offset-s1 m3 offset-m1" id="intro-artigo">
           <div class="divider" style="margin-right: 15%;"></div>
@@ -194,7 +195,7 @@ background-size: 150% 300%;" >
           </p>
         </div>
   <!--col Destaque-->
-  <div class="col s12 m7 offset-m1 destaque white z-depth-1 "
+  <div class="col s12 m7 offset-m1 destaque z-depth-1 "
   style="background-color: white; margin-top:25px; max-width: 650px; height: auto;">
       <!--img destaque-->
       <div class="col s10 m3 offset-s1" style="padding-top:25px" id="img-destaque">
@@ -242,13 +243,14 @@ background-size: 150% 300%;" >
   <div class="row">
     <!--Card1-->
     <div class="col s12 m4" id="artigo1">
-      <div class="card z-depth-1" style="height: 280px;">
+      <div class="card z-depth-2" style="height: 400px; width: 350px; border-radius: 0 25px; padding: 15px">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="https://placehold.it/600x240">
+          <img class="activator" src="https://placehold.it/300x240" style=" border-radius: 0 25px; ">
         </div>
         <div class="card-content">
           <span class="card-title activator">Card Title</span>
-          <a href="#" class="col s10 offset-s1 m6 offset-m3 btn z-depth-3 tooltipped" data-position="bottom" data-tooltip="Texto Completo">Conteúdo Completo</a>   
+          <a href="#" class="col s10 offset-s1 m6 offset-m3 btn z-depth-3 tooltipped"
+           data-position="bottom" data-tooltip="Texto Completo">Ler mais (...)</a>   
         </div>
         <div class="card-reveal">
             <span class="card-title">Card Title<i class="material-icons right">close</i></span>
@@ -313,51 +315,68 @@ background-size: 150% 300%;" >
   </div>`
 </div>
 </article><!--/Article-->
-<div class="row parceiros container">
-    <img href="" class="responsive-img" src="img/logo-ficr.png" alt="" style="max-width: 300px; padding: 40px 10px;">
-    <img href="" class="responsive-img" src="img/logo-ficr.png" alt="" style="max-width: 300px; padding: 40px 10px;">
-    <img href="" class="responsive-img" src="img/logo-ficr.png" alt="" style="max-width: 300px; padding: 40px 10px;">
-    <img href="" class="responsive-img" src="img/logo-ficr.png" alt="" style="max-width: 300px; padding: 40px 10px;">
-    <img href="" class="responsive-img" src="img/logo-ficr.png" alt="" style="max-width: 300px; padding: 40px 10px;">
-    <img href="" class="responsive-img" src="img/logo-ficr.png" alt="" style="max-width: 300px; padding: 40px 10px;">
+<div class="row parceiros">
+<div class="row" style="background: linear-gradient(270deg, #00dcf5, #b151f5); height: 150px" >
+  <h2 class="center" style="padding:;"> PARCEIROS</h2>
+</div>
+<div class="container parceiros" id="SitesParceiros">
+    <img class="responsive-img" src="img/logo-ficr.png" alt="" style="max-width: 300px; padding: 40px 10px;">
+    <img class="responsive-img" src="img/logo-ficr.png" alt="" style="max-width: 300px; padding: 40px 10px;">
+    <img class="responsive-img" src="img/logo-ficr.png" alt="" style="max-width: 300px; padding: 40px 10px;">
+    <img class="responsive-img" src="img/logo-ficr.png" alt="" style="max-width: 300px; padding: 40px 10px;">
+</div>
+   
   </div>
-<footer class="page-footer ">
-  
-  <div class="row">
-    <div class="col s12 m6 offset-m3">
-     <span>Nome do Site</span> 
-      <div class="row"> <!--display: inline-block;-->
-        <img src="#" alt="" href=""><!--Facebook-->
-        <img src="#" alt="" href=""><!--Instagram-->
-        <img src="#" alt="" href=""><!--Googleplus-->
+<footer class="page-footer " style="background-color: #f8f7ff;">
+  <div class="row"  style="margin: 0 5%">
+    <h5>Sobre Nós</h5>
+    <!--info Site-->
+    <div class="col s12 m3">
+      <img src="img/logo-site.png" alt="" style="width: 80px;">
+      <p style="color: #8425c8; text-align: justify" >
+        Esse é um site criado meramente para fins estudantis, site criado por alunos de primeiro periodo 
+        da Faculdade Imaculada Conceição do Recife - FICR, cursos de Sistemas para Internet e Análise de
+        Desenvolvimento de Sistemas 2019.2.
+      </p>
+      <div class="row center" id="redes-sociais">
+        <a href="https://www.instagram.com/"><img src="img/icones/instagram.svg" alt="Acesse nosso Instagram"></a><!--Instagram-->
+        <a href="https://www.facebook.com/"><img src="img/icones/facebook.svg" alt="Acesse nosso Facebook"></a><!--Facebook-->
+        <a href="https://www.twitter.com/"><img src="img/icones/twitter.svg" alt="Acesse nosso Twitter"></a><!--Twitter-->
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col s12 m3"><img src="" alt=""></div><!--LogoDesenvolvimento-->
-    <div class="col s12 m4 Desenvolvedores">
-        <dl>
-          <dt>Lucas Alves</dt>
-            <dd>Linkedin</dd>
-            <dd>Email</dd>
-            <dd>Instagram</dd>
-            <dd>GitHub</dd>
-            <dd>GitLab</dd>
-            <dd>Facebook</dd>
-          <dt>Rafael AlgumaCoisa</dt>
-            <dd>Linkedin</dd>
-            <dd>Email</dd>
-            <dd>Instagram</dd>
-            <dd>GitHub</dd>
-            <dd>GitLab</dd>
-            <dd>Facebook</dd>
-        </dl>
+    <!--info Sobre Nós-->
+    <div class="col s12 m6">
+      
+      <dl>
+        <dt>Duvidas sobre o Site?</dt>
+          <dd><a href="#!">Acesse nosso FAQ</a></dd>
+        
+      </dl>
+    </div> 
+    <!--Contato Site-->
+    <div class="col s12 m3">
+      <h6>Conheça nossos Desenvolvedores</h6>
+      <dt>Rafael Silva</dt>
+      <div class="row center" id="redes-sociais">
+          <a href="https://www.instagram.com/"><img src="img/icones/instagram.svg" alt=""></a><!--Instagram-->
+          <a href="https://www.facebook.com/"><img src="img/icones/facebook.svg" alt=""></a><!--Facebook-->
+          <a href="https://www.twitter.com/"><img src="img/icones/twitter.svg" alt=""></a><!--Twitter-->
+          <a href="https://www.instagram.com/"><img src="img/icones/github-logo.svg" alt=""></a><!--Instagram-->
+          <a href="https://www.facebook.com/"><img src="img/icones/linkedin.svg" alt=""></a><!--Facebook-->
+          <a href="https://www.twitter.com/"><img src="img/icones/telegram.svg" alt=""></a><!--Twitter-->
+        </div>
+
+      
     </div>
   </div>
-  <div class="footer-copyright">
+  
+<div class="divider"></div>
+  <div class="footer-copyright" style="
+  color: #8425c8; font-weight: 500; font-family: Alatsi">
       <div class="container">
-      © 2014 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      © 2019 Copyright Engrenagem Digital - TODOS OS DIREITOS RESERVADOS. 
+      <a class="right" href="#!"
+       style="color: #8425c8; font-family: Alatsi" >More Links</a>
       </div>
     </div>
 </footer>
