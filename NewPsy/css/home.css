@@ -3,20 +3,31 @@ body {
 }
 
 h1,
-h2,
+h3,
 h4,
 h5,
-h3,
 h6 {
-  font-weight: 800;
+  font-weight: 300;
   font-family: "Alatsi", sans-serif;
   text-align: center;
   color: #383f51;
+  margin: 0;
 }
+header h2 {
+  background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 4%;
+}
+
 .divider {
   width: 76%;
   height: 2px;
-  margin-left: 12%;
+
+  margin: 2% 12%;
   background-image: linear-gradient(270deg, #8425c8, #00dcf5);
 }
 .btn {
@@ -40,14 +51,15 @@ h6 {
 }
 
 #nav-mobile a {
-  color: #8425c8;
+  background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 15px;
   font-weight: 800;
 }
 
 #nav-mobile a:hover {
   font-size: 18px;
-  color: #e40057;
 }
 #nav-login {
   height: 65px;
@@ -154,12 +166,9 @@ h6 {
   font-weight: 900;
 }
 /*HEADER*/
-header {
-}
-
 #top-ilustração img {
   position: relative;
-  top: 25px
+  top: 25px;
 }
 #intro h1 {
   color: #def1f5;
@@ -169,27 +178,61 @@ header {
 }
 #intro p {
   font-size: 20px;
-  text-align: center;
-  max-width: 750px;
+  text-align: right;
+  max-width: 700px;
   color: #e7e7e7;
   margin: 5% 15%;
 }
 #intro p:hover {
   font-weight: 500;
-  color: #f8f8f8;
-  
+  color: #ffffff;
+}
+/*PROFISSIONAIS*/
+#cards-profissionais .card {
+  height: 370px;
+}
+#cards-profissionais .card-image {
+  padding: 0.75rem;
+}
+#cards-profissionais #nome-profissional {
+  font-family: "Alatsi", sans-serif;
+}
+#nome-profissional,
+#cargo-profissional,
+#local-profissional {
+  background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*FOOTER*/
-#redes-sociais img{
+.redes-sociais img {
   width: 40px;
-  
+  -webkit-filter: grayscale(100%);
 }
-dt{
+.redes-sociais img:hover {
+  -webkit-filter: grayscale(0%);
+  transition: 0.1s;
+}
+dl {
+  position: relative;
+  top: 25px;
+}
+dt {
   font-family: Alatsi;
   font-size: 18px;
-  color: #8425c8
+  color: #8425c8;
+  font-weight: 500;
+  margin: 30px, 0;
 }
-dd{
+dd a {
   margin-top: 0;
-
+  color: #383f51;
+  font-weight: 300;
+}
+dd a:hover {
+  background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 300;
+  font-size: 20px;
 }
