@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>PsyChat</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,800&display=swap" rel="stylesheet"/>
+	 <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+</head>
+<body>
+    <!--NAVBAR-->
+	<div class="navbar-fixed" id="navbar">	
+	<nav class="indigo darken-4 z-depth-5">
+	<div class="nav-wrapper">
+	<div class="container"><a href="#!" class="brand-logo">*LogodoSite*</a></div>
+	<a href="#" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons">menu</i></a>			
+	<div class="row">
+	<div class="col s12 m6 push-m4">					
+		<ul class="right hide-on-med-and-down">
+		<li><a href="../../../index.html">Artigos</a></li>
+		<li><a href="#profissionais">Profissionais</a></li>
+		<li><a href="#about-us">Sobre Nós</a></li>
+		</ul>
+	</div>
+	<div class="col s12 m6 push-m4">
+		<ul class="hide-on-med-and-down">
+		<li><a class="waves-effect waves-light btn-small modal-trigger amber darken-3 pull-m1" href="#login"><i class="material-icons right">person_pin</i>Login</a></li>    
+		</ul>
+	</div>	
+	</div>	
+	</div>
+	</nav>
+	</div>
+<!--NAV MOBILE-->
+	<ul class="sidenav" id="mobile-demo">
+	<li><a href="#artigos">Artigos</a></li>
+	<li><a href="#profissionais">Profissionais</a></li>
+	<li><a href="#about-us">Sobre Nós</a></li>
+	<li><a class="waves-effect waves-light btn-small modal-trigger amber darken-3" href="#login"><i class="material-icons left">person_pin</i>Efetuar Login</a></li>
+	</ul>
+<!--MODAL e LOGIN-->
+	<div classe="modal-login z-depth-5">
+	<div id="login" class="modal">
+	<div class="modal-content">
+	<div class="row">
+		<div class="col s10 m6 push-m3">
+		<header><h4 class="center" >Acesse a sua Conta</h4></header></div>	
+	<!--CLOSE-->
+		<div class="col s2 m6 ">
+		<a href="#!" class="modal-close btn-floating btn-small waves-effect waves-light right amber darken-3"><i class="material-icons">close</i></a></div>
+	</div>	
+	<!--LOGIN--> 
+	<div class="card" >
+	<div class="card card-content">
+		<div class="row">     	
+		<div class="input-field col s10 m6 push-m3">
+		<i class="material-icons prefix medium">account_circle</i>
+		<input id="email" type="email" class="validate">	
+		<label for="email">Seu email institucional</label>
+		</div>
+		</div>  			
+	<!--PASSWORD-->	
+		<div class="row">
+		<div class="input-field col s10 m6 push-m3">
+		<i class="material-icons prefix top ">lock</i>
+		<input id="password" type="password" class="validate">
+		<label for="password">Senha</label>
+		</div>
+		</div>
+	<!--BTN ENTRAR e ESQUECI-->
+		<div class="row">
+		<div class="col s12 m6 push-m3 center">
+		<button href="#modal-entrar" class="waves-effect waves-light btn modal-trigger amber darken-3" type="submit" name="action"><i class="material-icons right">send</i>Entrar</button><br><br>
+		<button href="#modal-esqueci" class="waves-effect waves-light btn modal-trigger amber darken-3" type="submit" name="action">Esqueci Senha</button>	
+		</div>
+		</div>
+	</div>		
+	</div>
+	</div>
+	</div>
+	</div>
+	<!--MODAL BTN ENTRAR-->
+	<div id="modal-entrar" class="modal bottom-sheet indigo darken-3">
+	<div class="modal-content"> <div class="progress">	<div class="indeterminate indigo"></div></div> </div>
+	<div class="modal-footer indigo lighten-5"> <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Tentar mais tarde</a>  </div>
+	</div>	
+
+	<!--MODAL BTN ESQUECI-->	
+	<div id="modal-esqueci" class="modal">
+	<div class="modal-content">
+	<div class="row"><div class="col  col s12 m6 push-m3"><h4>Recuperar Senha</h4>
+	</div></div>
+	<div class="row"><div class="col col s12 m6 push-m3"><input id="email" type="email" class="validate"><label for="email">Seu email institucional</label></div></div>	
+	<div class="row"><div class="col col s6 m6 push-m5 push-s3"><a href="#!" class=" modal-action modal-close waves-effect waves-green btn amber darken-3">Enviar</a></div></div>
+	<div class="row"><div class="col s12 m6 push-m3"><p>*Você receberá um email com a solicitação de troca de senha. </p></div></div></div>
+	<div class="modal-footer"><a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Tentar mais tarde</a></div>
+	</div>
+
+<!--BTN FLOATING-->
+	<div class="fixed-action-btn" style="bottom: 50px; right: 50px;">
+	<a href="#top" class="btn-floating blue waves-effect waves-light amber darken-3"><i class="material-icons">arrow_drop_up</i></a>	
+	</div><!--/BTN FLOATING-->
+
+<!--SECTION ARTIGO-->
+<section class="container">
+<div class="row"><div class="col s12 m6 push-m3"><header><h2>Titulo do Artigo</h2></header><hr></div></div>
+<div class="row">
+<div class="col s12 m8">
+<div class="card-panel">
+ <div class="card-image col s12 m10 push-m1"><img src="../../../imagens/smily.jpg" 
+    style="width:275px;height:140px;float:center;padding:10px"></div>
+ <header class="card-title"><h3>Titulo do Artigo</h3></header>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
+	aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
+	exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
+	voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
+	aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
+	exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
+ 	voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
+	aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
+	exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
+	voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.</p>	
+</div></div>
+<div class="col s12 m4">
+<div class="card">
+ <div class="card-image"><img src="../../../conteudo/profissionais/id-002_Daniel_Monteiro/profile.jpg" style="padding: 20px; border-radius: 25px;" ></div>
+                <span class="card-title">Daniel Monteiro</span><hr>
+                <div class="card-content">
+                  <p></p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+
+</div> 
+</div>   
+</section>
+
+<!--SCRIPT-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/auto.js"></script>
+
+</body>
+</html>

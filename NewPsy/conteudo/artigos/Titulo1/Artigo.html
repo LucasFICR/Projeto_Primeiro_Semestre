@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>PsyChat</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	 <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link type="text/css" rel="stylesheet" href="../../../css/artigo.css"  media="screen,projection"/>
+</head>
+<body>
+
+<section> 
+    <header>
+        <nav class="nav-wrapper" id="NavTop">
+            <div class="container">
+                <a href="#!" class="brand-logo">*LogodoSite*</a>
+            </div>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>			
+            <div class="row" id="row-nav">
+                <div class="col s12 m6 offset-m4">					
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="../../../index.html">Profissionais</a></li>
+                        <li><a href="../../../index.html">Sobre Nós</a></li>
+                    </ul>
+                </div><!--/col-->
+                <div class="col s12 m2">
+                    <ul class="hide-on-med-and-down">
+                        <li>
+                            <a class="waves-effect waves-light btn-small modal-trigger" href="#login" id="btn">
+                            <i class="material-icons right">person_pin</i>Login</a>
+                        </li>    
+                    </ul>
+                </div><!--/col-->	
+            </div><!--/row-->  
+        </nav><!--/NAVBAR desktop-->
+        <nav class="nav-wrapper" id="NavBottom">
+            <div class="col s12">
+                <div class="container">
+                    <a href="../../../index.html" class="breadcrumb">Artigos</a>
+                    <a href="#!" class="breadcrumb">TITULO DO ARTIGO</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="sidenav" id="mobile-demo">
+    <ul>
+        <li><a href="../../../index.html">Profissionais</a></li>
+        <li><a href="../../../index.html">Sobre Nós</a></li>
+        <li><a class="waves-effect waves-light btn-small modal-trigger" id="btn" href="#login"><i class="material-icons left">person_pin</i>Efetuar Login</a></li>
+    </ul>
+    </div><!--/NAVBAR mobile--> 
+    <div id="login" class="modal z-depth-5" style="max-width: 550px;">
+    <div class="modal-content">
+        <div class="row">
+        <div class="col s10 m6 offset-m3">
+            <header><h4 class="center">Acesse a sua Conta</h4></header>
+        </div><!--/HEADER-->   
+        <div class="col s2 m2 offset-m1">
+            <div class="modal-close"><i class="material-icons">close</i> </div>
+        </div><!--/btn CLOSE-->
+        </div><!--/row-->	
+        <div class="row">   	
+        <div class="input-field col s10 m6 offset-m3">
+            <i class="material-icons prefix medium">account_circle</i>
+            <input id="email" type="email" class="validate">	
+            <label for="email">Email Institucional</label>
+        </div>
+        </div><!--/row EMAIL-->  			
+        <div class="row">
+        <div class="input-field col s10 m6 offset-m3">
+            <i class="material-icons prefix top ">lock</i>
+            <input id="password" type="password" class="validate">
+            <label for="password">Senha</label>
+        </div>
+        </div><!--/row PASSWORD--> 
+        <div class="row">
+        <div class="col s12 m6 push-m3 center">
+            <button href="#modal-entrar" class="waves-effect waves-light btn modal-trigger" id="btn" type="submit" name="action">
+            <i class="material-icons right">send</i>Entrar</button><br><br>
+            <button href="#modal-esqueci" class="waves-effect waves-light btn modal-trigger" id="btn" type="submit" name="action">Esqueci Senha</button>	
+        </div>
+        </div><!--/row BTN-->
+    </div>
+    </div><!--/MODAL-->   
+    <div id="modal-entrar" class="modal bottom-sheet">
+    <div class="modal-content"> <div class="progress"><div class="indeterminate"></div></div></div>
+    <div class="modal-footer"> <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat" id="btn">Tentar mais tarde</a> </div>
+    </div><!--/LOAD-->		
+    <div id="modal-esqueci" class="modal" style="max-height: 500px; max-width: 500px;">
+    <div class="modal-content">
+        <div class="row">
+        <div class="modal-close right"><i class="material-icons">close</i></div><!--/MODAL CLOSE-->
+        <div class="col s12 m6 offset-m3 center"><header><h4>Recuperar Senha</h4></header></div>     
+        </div><!--row-->
+        <div class="row">
+        <div class="col s12 m6 offset-m3">
+        <input id="email" type="email" class="validate" placeholder="Email Institucional">
+        </div>
+        </div><!--row-->	
+        <div class="row">
+        <div class="col s12 m6 push-m5">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn" id="btn">Enviar</a>
+        </div>
+        </div><!--row-->
+        <div class="row">
+        <div class="col s12 m6 offset-m3">
+        <p>*Você receberá um email com a solicitação de troca de senha. </p>
+        </div>
+        </div><!--row-->
+    </div><!--/CONTEUDO-->
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat" id="btn">Tentar mais tarde</a>
+    </div><!--/FOOTER-->
+    </div><!--/MODAL ESQUECI-->
+
+</section><!--/NAVBAR--> 
+<div class="row">
+    <div class="col s12 m2 offset-m5 center ">
+        <div class="NightMode">
+            <h6>Modo Escuro</h6>
+            <div class="switch">
+                <label>
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div><!--/MODO NOTURNO-->
+
+
+<article style="margin: 0 10%">
+
+<div class="row">
+    
+<div class="col s12 m10">
+<div class="card-panel z-depth-3">
+    <div class="row">
+    <div class="col s12">
+    <h4 style="text-align: center;">Titulo do Artigo</h4>
+    <img src="https://placehold.it/900x300"  class="responsive-img" >
+
+    <em class="col s12" style="text-align: justify; padding: 0 1em 0 1em;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta
+    explicabo, aut ut aliquam possimus dignissimos eveniet.
+    </em>
+    </div></div> 
+
+    <p style="text-align: justify;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
+	aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
+	exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
+    voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.
+    </p>
+    <p style="text-align: justify;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
+	aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
+	exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
+     voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.
+    </p>
+    <p style="text-align: justify;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
+	aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
+	exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
+    voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.
+    </p>	
+</div>
+</div>
+    <aside>
+        <div class="col s12 m2 container" >
+            <div class="card responsive-img z-depth-1" style="">
+                <div class="card-image">
+                    <img src="../../profissionais/id-000_Nome_Sobrenome/profile.jpeg" style="padding: 5px; border-radius: 10px;">
+                    <a class="btn-floating halfway-fab modal-trigger waves-effect waves-light center modal-trigger" href="#modal-profissional" id="btn" href="#modal-ana-clara">
+                    <i class="material-icons">flip_to_front</i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title black-text">Nome Sobrenome</span>
+                    <p style="text-align: justify;">
+                    Informações sobre o profissional : I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>   
+        </div><!--/col CARD-->
+    </aside>
+</div>
+</article><!--/SECTION ARTIGO-->
+
+
+
+<div class="PageUp">
+
+</div>
+
+<footer class="page-footer"> 
+	<div class="footer-copyright">
+	<div class="container">© 2019.2 LucasFICR - SI<a class="grey-text text-lighten-4 right" href="#!">+ Infos</a></div>
+	</div>
+</footer><!--/FOOTER-->   
+	 
+<!--SCRIPT-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../../../js/auto.js"></script>
+
+</body>
+</html>
