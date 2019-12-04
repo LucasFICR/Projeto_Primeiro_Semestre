@@ -48,7 +48,11 @@
         }
          
         </style>
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>     
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+   <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
   </head>
+
   <body>
 <!--Navbar-->   
 <nav class="z-depth-2" id="scroll-nav">
@@ -186,6 +190,14 @@ background-size: 150% 300%;" >
     </div>
     <div class="row">
       <div class="col s10 offset-s1 m3 offset-m1" id="intro-artigo">
+         
+          <lottie-player src="https://assets3.lottiefiles.com/datafiles/7U1rGDhr3RKjEj2/data.json" background="transparent" speed="1"
+          style="width: auto; height: 200px;" loop autoplay>  </lottie-player>
+
+          
+
+
+
         <div class="divider" style="margin-right: 15%;"></div>
         <h3>Destaque da Semana</h3>
           <p>
@@ -198,7 +210,7 @@ background-size: 150% 300%;" >
       <div class="col s10 offset-s1 m7 offset-m1 destaque z-depth-1 "
       style="background-color: white; margin-top:25px; max-width: 650px; height: auto;">
         <!--img destaque-->
-        <div class="col s12 m3" style="padding-top:25px" id="img-destaque">
+        <div class="col s10 offset-s1 m3" style="padding-top:25px" id="img-destaque">
           <img class="responsivel-img" src="https://placehold.it/250x300"/>
         </div>
         <!--intro destaque-->
@@ -206,7 +218,9 @@ background-size: 150% 300%;" >
        
           <div class="row">
             <div class="col s12 m9 offset-m3">
-                <header class="destaque"><h3 id="title" style="padding-top: 10%; text-align: ;">Tilulo do artigo</h3></header>
+              <header class="destaque">
+                <h3 id="title" style="padding-top: 10%; text-align: ;">Tilulo do artigo</h3>
+              </header>
               <p class="destaque" id="content" style="font-style: italic; font-size: 16px; text-align: right;">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, saepe! Expedita quae libero
               neque at aliquid, nisi atque cupiditate? Harum officiis beatae soluta rem perspiciatis exercit
@@ -217,7 +231,7 @@ background-size: 150% 300%;" >
         </div>
         <!--btn destaque-->
         <div class="row destaque">
-          <a href="#" class="col s10 offset-s1 m6 offset-m3 btn z-depth-3" style="">Conteúdo Completo</a>
+          <a href="#" class="col s10 offset-s1 m6 offset-m3 btn z-depth-3">Conteúdo Completo</a>
         </div>
       </div><!--/col Destaque-->
     </div>
@@ -620,6 +634,7 @@ background-size: 150% 300%;" >
 </footer>
 
 <!--SCRIPT-->
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
