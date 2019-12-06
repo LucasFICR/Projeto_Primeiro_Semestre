@@ -7,7 +7,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 300;
+  font-weight: 500;
   font-family: "Alatsi", sans-serif;
   text-align: center;
   color: #383f51;
@@ -41,6 +41,7 @@ header h2 {
 .btn #artigo1 {
   background-color: #2e5cb3 !important;
 }
+
 #scroll-nav {
   height: 80px;
   background-color: #f8f7ff;
@@ -53,7 +54,8 @@ header h2 {
   margin-left: 25%;
 }
 
-#nav-mobile a {
+#nav-mobile a,
+#NavBottom a {
   background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -61,7 +63,8 @@ header h2 {
   font-weight: 800;
 }
 
-#nav-mobile a:hover {
+#nav-mobile a:hover,
+#NavBottom a:hover {
   font-size: 18px;
 }
 #nav-login {
@@ -223,7 +226,8 @@ dl {
   bottom: 17px;
 }
 dt,
-footer h6 {
+footer h6,
+.NightMode h6 {
   font-family: Alatsi;
   margin-bottom: 9px;
   font-size: 18px;
