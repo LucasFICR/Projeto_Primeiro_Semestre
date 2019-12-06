@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.4.3/dist/sweetalert2.all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@9.4.3/dist/sweetalert2.css"
+    />
+  </head>
+  <style>
+    :root {
+      --input-padding-x: 2rem;
+      --input-padding-y: 0.75rem;
+    }
+
+    body {
+      background: #2600ff;
+      background: linear-gradient(to right, #8425c8, #6a2ae2, #4ab5f3);
+    }
+
+    .card-signin {
+      border: 0;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+      position: relative;
+      top: 20%;
+      border-radius: 0 25px;
+    }
+
+    .card-signin .card-title {
+      margin-bottom: 2rem;
+      font-weight: 300;
+      font-size: 2rem;
+      background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card-signin .card-body {
+      padding: 2rem;
+    }
+
+    .form-signin {
+      width: 100%;
+    }
+
+    .form-signin .btn {
+      font-size: 80%;
+      border-radius: 5rem;
+      letter-spacing: 0.1rem;
+      font-weight: bold;
+      padding: 1rem;
+      transition: all 0.2s;
+      border-radius: 0 25px;
+      background: linear-gradient(320deg, #b668ffd0, #2e5cb3);
+    }
+
+    .form-label-group {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .form-label-group input {
+      height: auto;
+      border-radius: 2rem;
+    }
+
+    .form-label-group > input,
+    .form-label-group > label {
+      padding: var(--input-padding-y) var(--input-padding-x);
+    }
+
+    .form-label-group > label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      margin-bottom: 0;
+      /* Override default `<label>` margin */
+      line-height: 1.5;
+      background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .form-label-group input::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input:-ms-input-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::-ms-input-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::-moz-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input:not(:placeholder-shown) {
+      padding-top: calc(
+        var(--input-padding-y) + var(--input-padding-y) * (2 / 3)
+      );
+      padding-bottom: calc(var(--input-padding-y) / 3);
+    }
+
+    .form-label-group input:not(:placeholder-shown) ~ label {
+      padding-top: calc(var(--input-padding-y) / 3);
+      padding-bottom: calc(var(--input-padding-y) / 3);
+      font-size: 12px;
+      color: #777;
+    }
+
+    hr {
+      background-image: linear-gradient(270deg, #8425c8, #00dcf5);
+      height: 1px;
+    }
+
+    a {
+      background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 500;
+      position: relative;
+      left: 4rem;
+    }
+
+    /* Fallback for Edge
+-------------------------------------------------- */
+
+    @supports (-ms-ime-align: auto) {
+      .form-label-group > label {
+        display: none;
+      }
+
+      .form-label-group input::-ms-input-placeholder {
+        color: #777;
+      }
+    }
+
+    /* Fallback for IE
+-------------------------------------------------- */
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      .form-label-group > label {
+        display: none;
+      }
+
+      .form-label-group input:-ms-input-placeholder {
+        color: #777;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center">Escolha sua Nova Senha</h5>
+              <form class="form-signin" id="form-login">
+                <div class="form-label-group">
+                  <input
+                    type="email"
+                    id="inputEmail"
+                    class="form-control"
+                    placeholder="Email address"
+                    required
+                    autofocus
+                  />
+                  <label for="inputEmail">Seu Email Institucional</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input
+                    type="password"
+                    id="inputPassword"
+                    class="form-control"
+                    placeholder="Password"
+                    minlength="6"
+                    maxlength="20"
+                    required
+                  />
+                  <label for="inputPassword">Nova Senha</label>
+                </div>
+                <div class="form-label-group">
+                  <input
+                    type="password"
+                    id="inputPassword"
+                    class="form-control"
+                    placeholder="Password"
+                    minlength="6"
+                    maxlength="20"
+                    required
+                  />
+                  <label for="inputPassword">Confirme sua Senha</label>
+                </div>
+                <button
+                  class="btn btn-lg btn-primary btn-block text-uppercase"
+                  type="submit"
+                  id="btn-entrar"
+                >
+                  MUDAR
+                </button>
+
+                <hr class="my-4" />
+                <div class="row">
+                  <div class="col-sm-5 col-md-7 col-lg-8 mx-auto">
+                    <a href="home.html" class="recuperar-senha"
+                      >Tentar mais tarde</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/validate.js"></script>
+  </body>
+</html>
