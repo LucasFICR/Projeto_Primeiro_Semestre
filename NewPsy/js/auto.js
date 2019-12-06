@@ -20,3 +20,14 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 };
+//Slider
+// Slider
+const slider = document.querySelector(".slider");
+M.Slider.init(slider, {
+  indicators: false,
+  height: 600,
+  transition: 500,
+  interval: 10000
+});
+
+//
