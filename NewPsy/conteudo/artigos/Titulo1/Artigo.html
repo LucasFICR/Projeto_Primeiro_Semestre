@@ -5,126 +5,166 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>PsyChat</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,800&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 	 <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-    <link type="text/css" rel="stylesheet" href="../../../css/artigo.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="../../../css/home.css"> 
+<style>
+    body{
+        background: #efeff0;
+        
+    }
+    #NavBottom {
+        height: 60px;
+        background: #f2f0fa;
+        text-align: center;
+    }
+    h2{
+        font-weight: 300;
+        text-align: center;
+       padding-bottom: 5px;
+        margin: 0;
+    }
+    h3{
+        background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2rem;
+        font-weight: 300;
+        text-align: left;
+        font-family: "Alatsi", sans-serif;
+    }
+   article p{
+       font-family: 'Roboto Slab', serif;
+       text-align: justify;
+    }
+    /*CSS CARD*/
+
+</style>
 </head>
 <body>
 
-<section> 
-    <header>
-        <nav class="nav-wrapper" id="NavTop">
-            <div class="container">
-                <a href="#!" class="brand-logo">*LogodoSite*</a>
+<header> <!--Navbar-->   
+    <nav class="z-depth-2" id="scroll-nav">
+            <div class="nav-wrapper" >
+            <!--LOGO-->
+            <div class="col s12 m3 offset-s1" id="menu-mobile">
+                <a href="#" class="brand-logo" style=" color: #8425c8; font-weight: 900; "><img src="../../../img/logo-site.png" alt="" height="70px"></a>
+                <a href="#" data-target="mobile-demo" class="left sidenav-trigger " style=" color: #8425c8;">
+                <i class="material-icons">menu</i></a
+                >
             </div>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>			
-            <div class="row" id="row-nav">
-                <div class="col s12 m6 offset-m4">					
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="../../../index.html">Profissionais</a></li>
-                        <li><a href="../../../index.html">Sobre Nós</a></li>
-                    </ul>
-                </div><!--/col-->
-                <div class="col s12 m2">
-                    <ul class="hide-on-med-and-down">
-                        <li>
-                            <a class="waves-effect waves-light btn-small modal-trigger" href="#login" id="btn">
-                            <i class="material-icons right">person_pin</i>Login</a>
-                        </li>    
-                    </ul>
-                </div><!--/col-->	
-            </div><!--/row-->  
-        </nav><!--/NAVBAR desktop-->
-        <nav class="nav-wrapper" id="NavBottom">
-            <div class="col s12">
-                <div class="container">
-                    <a href="../../../index.html" class="breadcrumb">Artigos</a>
-                    <a href="#!" class="breadcrumb">TITULO DO ARTIGO</a>
+            <!--NAV MOBILE-->
+            <ul class="sidenav" id="mobile-demo">
+                <div class="user-view">
+                <div class="background">
+                    <img src="../../../img/georx.png" />
                 </div>
+                <a href="#"><h6 class="center" id="name">André Martins</h6></a>
+                <a href="#"
+                    ><img id="profile" class="circle center" src="../../../img/profile.jpg"
+                /></a>
+                <span id="user-type">Estágiario</span>
+                <span id="user-status" style="color: rgba(106, 250, 49, 0.76);"
+                    ><i class="material-icons left">blur_on</i> Online</span
+                >
+                </div>
+                <!--collapsible-->
+                <ul class="collapsible collapsible-accordion">
+                <!--collapsible Perfil-->
+                <li>
+                    <a class="collapsible-header waves-effect waves-blue">
+                    <i class="material-icons" style="color: #f8f7ff; font-size: 27px; margin-left: 18px;">perm_identity</i>
+                    Visualizar Perfil<i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                    <ul>
+                        <li>
+                        <span class="item-viewprofile">Instituição:</span>
+                        <span class="right" id="user-instituicao">FICR</span>
+                        </li>
+                        <li>
+                        <span class="item-viewprofile">Matrícula:</span>
+                        <span class="right" id="user-matricula">FR0808008</span>
+                        </li>
+                        <div class="divider" style="margin-left: 10%"></div>
+                        <li>
+                        <span class="item-viewprofile">Conversas Concluidas:</span>
+                        <span class="right" id="user-conversas">67</span>
+                        </li>
+                        <li>
+                        <span class="item-viewprofile">Tempo Acumulado:</span>
+                        <span class="right" id="user-timer">20°49'</span>
+                        </li>
+                        <li>
+                        <span class="item-viewprofile">Última Conversa:</span>
+                        <span class="right" id="user-last-chat">13/12/2019</span>
+                        </li>
+                    </ul>
+                    </div>
+                </li><!--/collapse Perfil-->
+                <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">chat</i>Definir Conversa</a></li>
+                <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">vpn_key</i> Redefinir Senha</a></li>
+                <li><div class="divider" style="margin-left: 10%"></div></li>
+                <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">subject</i>Artigos</a></li>
+                <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">perm_contact_calendar</i>Profissionais</a></li>
+                <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">tab</i>Sobre Nós</a></li>
+                <li><div class="divider" style="margin-left: 10%"></div></li>
+                <li><a href="index.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">exit_to_app</i> Desconectar</a></li>
+                </ul><!--/collapsible-->
+            </ul>       
+            <!--NAV DESKTOP-->
+            <div class="row">
+                <div class="col m6 offset-m1 hide-on-med-and-down">
+                    <ul id="nav-mobile" class="left">
+                    <li><a href="../../../home.html">COLABORADORES</a></li>
+                    <li><a href="../../../home.html">APOIADORES</a></li>
+                    </ul>
+                </div>
+                
+                <!--col USUÁRIO-->
+                <div class="col m3 right hide-on-med-and-down btn waves-light z-depth-5" id="nav-login">
+                <ul>
+                    <li>
+                    <div class="dropdown-trigger" href="#!" data-target="drop-menu" id="user-name">André Martins<i class="material-icons right">arrow_drop_down</i>  
+                    <!--STATUS-->
+                    <span id="user-status"><i class="material-icons left">blur_on</i> Online</span>
+                    </div>
+                    </li>
+                </ul>
+                </div>
+                <!--DROPDONW-->
+                <ul id="drop-menu" class="dropdown-content">
+                    <li><a href="#"><i class="material-icons">perm_identity</i>Visualizar Perfil</a></li>
+                    <li><a href="#"><i class="material-icons">chat</i>Definir Conversa</a></li>
+                    <li><a href="#"><i class="material-icons">vpn_key</i> Redefinir Senha</a></li>
+                    <div class="divider"></div>
+                    <li id="dropdown-exit"><a href="../../../index.html"><i class="material-icons">exit_to_app</i>Desconectar</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+            
+            </div>
+            </div>
+    </nav>
+    <nav id="NavBottom">
+        <div class="col s12">
+            <a href="../../../home.html" class="breadcrumb">ARTIGOS</a>
+            <a href="#!" class="breadcrumb">TITULO DO ARTIGO</a>   
+        </div>
+    </nav>
+</header><!--/NAVBAR--> 
 
-    <div class="sidenav" id="mobile-demo">
-    <ul>
-        <li><a href="../../../index.html">Profissionais</a></li>
-        <li><a href="../../../index.html">Sobre Nós</a></li>
-        <li><a class="waves-effect waves-light btn-small modal-trigger" id="btn" href="#login"><i class="material-icons left">person_pin</i>Efetuar Login</a></li>
-    </ul>
-    </div><!--/NAVBAR mobile--> 
-    <div id="login" class="modal z-depth-5" style="max-width: 550px;">
-    <div class="modal-content">
-        <div class="row">
-        <div class="col s10 m6 offset-m3">
-            <header><h4 class="center">Acesse a sua Conta</h4></header>
-        </div><!--/HEADER-->   
-        <div class="col s2 m2 offset-m1">
-            <div class="modal-close"><i class="material-icons">close</i> </div>
-        </div><!--/btn CLOSE-->
-        </div><!--/row-->	
-        <div class="row">   	
-        <div class="input-field col s10 m6 offset-m3">
-            <i class="material-icons prefix medium">account_circle</i>
-            <input id="email" type="email" class="validate">	
-            <label for="email">Email Institucional</label>
-        </div>
-        </div><!--/row EMAIL-->  			
-        <div class="row">
-        <div class="input-field col s10 m6 offset-m3">
-            <i class="material-icons prefix top ">lock</i>
-            <input id="password" type="password" class="validate">
-            <label for="password">Senha</label>
-        </div>
-        </div><!--/row PASSWORD--> 
-        <div class="row">
-        <div class="col s12 m6 push-m3 center">
-            <button href="#modal-entrar" class="waves-effect waves-light btn modal-trigger" id="btn" type="submit" name="action">
-            <i class="material-icons right">send</i>Entrar</button><br><br>
-            <button href="#modal-esqueci" class="waves-effect waves-light btn modal-trigger" id="btn" type="submit" name="action">Esqueci Senha</button>	
-        </div>
-        </div><!--/row BTN-->
-    </div>
-    </div><!--/MODAL-->   
-    <div id="modal-entrar" class="modal bottom-sheet">
-    <div class="modal-content"> <div class="progress"><div class="indeterminate"></div></div></div>
-    <div class="modal-footer"> <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat" id="btn">Tentar mais tarde</a> </div>
-    </div><!--/LOAD-->		
-    <div id="modal-esqueci" class="modal" style="max-height: 500px; max-width: 500px;">
-    <div class="modal-content">
-        <div class="row">
-        <div class="modal-close right"><i class="material-icons">close</i></div><!--/MODAL CLOSE-->
-        <div class="col s12 m6 offset-m3 center"><header><h4>Recuperar Senha</h4></header></div>     
-        </div><!--row-->
-        <div class="row">
-        <div class="col s12 m6 offset-m3">
-        <input id="email" type="email" class="validate" placeholder="Email Institucional">
-        </div>
-        </div><!--row-->	
-        <div class="row">
-        <div class="col s12 m6 push-m5">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn" id="btn">Enviar</a>
-        </div>
-        </div><!--row-->
-        <div class="row">
-        <div class="col s12 m6 offset-m3">
-        <p>*Você receberá um email com a solicitação de troca de senha. </p>
-        </div>
-        </div><!--row-->
-    </div><!--/CONTEUDO-->
-    <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat" id="btn">Tentar mais tarde</a>
-    </div><!--/FOOTER-->
-    </div><!--/MODAL ESQUECI-->
-
-</section><!--/NAVBAR--> 
-<div class="row">
-    <div class="col s12 m2 offset-m5 center ">
+<div class="row" style="margin-top: 15px;">
+    <div class="col s12 m6 offset-m3  center ">
         <div class="NightMode">
-            <h6>Modo Escuro</h6>
+            <h6>Modo Noturno</h6>
             <div class="switch">
+            
                 <label>
                     <input type="checkbox">
                     <span class="lever"></span>
@@ -135,45 +175,47 @@
 </div><!--/MODO NOTURNO-->
 
 
-<article style="margin: 0 10%">
+<section class="row" style="margin: 0 10%">
 
-<div class="row">
+<article class="col s12 m9"  style="padding-right: 5%;">
     
-<div class="col s12 m10">
-<div class="card-panel z-depth-3">
     <div class="row">
-    <div class="col s12">
-    <h4 style="text-align: center;">Titulo do Artigo</h4>
-    <img src="https://placehold.it/900x300"  class="responsive-img" >
+        <div class="col s12">
+        <header><h2>Titulo do Artigo</h2></header>
+        <img src="https://placehold.it/900x300"  class="responsive-img" >
 
-    <em class="col s12" style="text-align: justify; padding: 0 1em 0 1em;">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta
-    explicabo, aut ut aliquam possimus dignissimos eveniet.
-    </em>
-    </div></div> 
-
-    <p style="text-align: justify;">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
-	aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
-	exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
-    voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.
-    </p>
-    <p style="text-align: justify;">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
-	aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
-	exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
-     voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.
-    </p>
-    <p style="text-align: justify;">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
-	aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
-	exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
-    voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.
-    </p>	
-</div>
-</div>
-    <aside>
-        <div class="col s12 m2 container" >
+        <em class="col s12" style="text-align: justify; padding:  1em;">
+            Desta maneira, o início da atividade geral de formação de atitudes
+            agrega valor ao estabelecimento do fluxo de informações.
+        </em>
+        </div>
+    </div> 
+    <div class="row">
+        <h3>Subtitulo </h3>
+        <p style="text-align: justify;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
+        aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
+        exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
+        voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.
+        </p>
+        <h3>Subtitulo </h3>
+        <p style="text-align: justify;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
+        aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
+        exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
+        voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.
+        </p>
+        <h3>Subtitulo </h3>
+        <p style="text-align: justify;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae ea sequi fugiat, voluptates hic mollitia doloremque blanditiis soluta explicabo,
+        aut ut aliquam possimus dignissimos eveniet. Accusantium necessitatibus doloremque explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, at perferendis vel eligendi temporibus labore nihil magni saepe dolor,
+        exercitationem assumenda nostrum cumque. Ad impedit magnam vitae tempora vel quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia perspiciatis debitis sed similique, velit nihil magnam officiis quas sint
+        voluptatibus error adipisci esse, placeat hic, fugiat asperiores qui iusto.
+        </p>	
+    </div>
+</article>
+   
+<aside class="col s12 m3" >
             <div class="card responsive-img z-depth-1" style="">
                 <div class="card-image">
                     <img src="../../profissionais/id-000_Nome_Sobrenome/profile.jpeg" style="padding: 5px; border-radius: 10px;">
@@ -182,16 +224,15 @@
                 </div>
                 <div class="card-content">
                     <span class="card-title black-text">Nome Sobrenome</span>
-                    <p style="text-align: justify;">
+                    <p style="">
                     Informações sobre o profissional : I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively.Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
             </div>   
-        </div><!--/col CARD-->
-    </aside>
-</div>
-</article><!--/SECTION ARTIGO-->
+</aside><!--/col CARD-->  
+
+</section><!--/SECTION ARTIGO-->
 
 
 
