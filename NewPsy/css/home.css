@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "comfortaa", sans-serif;
+  background-color: #eaf1fb;
 }
 
 h1,
@@ -20,9 +26,12 @@ header h2 {
   font-size: 2.5rem;
   font-weight: 300;
   text-align: center;
-  padding-top: 4%;
+  padding: 2%;
+  margin: 0;
 }
-
+.row .pagination {
+  margin-bottom: 1%;
+}
 .divider {
   width: 76%;
   height: 2px;
@@ -197,6 +206,7 @@ header h2 {
 #cards-profissionais .card {
   height: 370px;
   background: linear-gradient(to top, #ffffff, #ecebec);
+  border-radius: 0 25px;
 }
 
 #cards-profissionais .card-image {
@@ -212,9 +222,18 @@ header h2 {
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
+div#cards-profissionais .card img#photo {
+  max-width: 192px;
+  max-height: 192px;
+  border-radius: 0 10px;
+}
+
+/*CARD PROFISSIONAIS*/
+
 /*FOOTER*/
 .redes-sociais img {
-  width: 30px;
+  margin-bottom: 2%;
+  width: 40px;
   -webkit-filter: grayscale(100%);
 }
 .redes-sociais img:hover {
@@ -234,6 +253,9 @@ footer h6,
   color: #8425c8;
   font-weight: 500;
   margin: 30px, 0;
+}
+footer h6 {
+  text-align: left;
 }
 dd a,
 footer p {
@@ -261,4 +283,133 @@ footer label {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
+}
+
+/*MODAL PROFISSIONAL*/
+div#modal-profissional {
+  max-width: 50em;
+}
+
+div#modal-body {
+  background-color: #374179;
+}
+#user-photo {
+  height: 13em;
+  width: 13em;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#p-psico,
+#p-tele,
+#p-email {
+  text-align: left;
+}
+div#modal-profissional span {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-family: comfortaa;
+}
+div#imagens-local .slides {
+  width: 200;
+  height: 100;
+}
+
+/*SLIDE FOTOS CLINICAS*/
+
+/* Slideshow container */
+.gallery-container {
+  width: 100%;
+  position: relative;
+  margin: 10%;
+}
+@media (min-width: 10em) {
+  .gallery-container {
+    width: 20em;
+    margin: auto;
+  }
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 10em;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  margin-top: -40px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(248, 213, 17, 0.733);
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 15rem;
+  border-radius: 0 3px 3px 0;
+}
+.prev {
+  right: 19rem;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(11, 15, 243, 0.774);
+}
+
+/* Caption text */
+
+.imgslide {
+  width: 16em;
+  height: 11em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section.gallery-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  left: 0em;
+  top: 1em;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
