@@ -28,7 +28,9 @@ M.Slider.init(slider, {
   height: 600,
   transition: 500,
   interval: 10000
-}); //AutoComplete
+});
+
+//AutoComplete
 
 $(document).ready(function() {
   $("input.autocomplete").autocomplete({

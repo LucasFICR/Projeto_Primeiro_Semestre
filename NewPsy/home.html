@@ -110,12 +110,12 @@
                 </ul>
               </div>
             </li><!--/collapse Perfil-->
-            <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">chat</i>Definir Conversa</a></li>
-            <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">vpn_key</i> Redefinir Senha</a></li>
+            <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">chat</i>Configurar Chat</a></li>
+            <li><a href="forgotpass.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">vpn_key</i> Redefinir Senha</a></li>
             <li><div class="divider" style="margin-left: 10%"></div></li>
-            <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">subject</i>Artigos</a></li>
-            <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">perm_contact_calendar</i>Profissionais</a></li>
-            <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">tab</i>Sobre Nós</a></li>
+            <li><a href="#section-artigos"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">subject</i>Artigos</a></li>
+            <li><a href="#section-colaboradores"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">perm_contact_calendar</i>Colaboradores</a></li>
+            <li><a href="#about-us"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">tab</i>Sobre Nós</a></li>
             <li><div class="divider" style="margin-left: 10%"></div></li>
             <li><a href="index.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">exit_to_app</i> Desconectar</a></li>
           </ul><!--/collapsible-->
@@ -124,9 +124,9 @@
         <div class="row">
           <div class="col m7 offset-m1 hide-on-med-and-down">
               <ul id="nav-mobile" class="left">
-                <li><a href="#">ARTIGOS</a></li>
-                <li><a href="#">PROFISSIONAIS</a></li>
-                <li><a href="#">APOIADORES</a></li>
+                <li><a href="#section-artigos">ARTIGOS</a></li>
+                <li><a href="#section-colaboradores">COLABORADORES</a></li>
+                <li><a href="#about-us">APOIADORES</a></li>
               </ul>
             </div>
             
@@ -144,8 +144,8 @@
             <!--DROPDONW-->
             <ul id="drop-menu" class="dropdown-content">
               <li><a href="#"><i class="material-icons">perm_identity</i>Visualizar Perfil</a></li>
-              <li><a href="#"><i class="material-icons">chat</i>Definir Conversa</a></li>
-              <li><a href="#"><i class="material-icons">vpn_key</i> Redefinir Senha</a></li>
+              <li><a href="#"><i class="material-icons">chat</i>Configurar Chat</a></li>
+              <li><a href="forgotpass.html"><i class="material-icons">vpn_key</i> Redefinir Senha</a></li>
               <div class="divider"></div>
               <li id="dropdown-exit"><a href="index.html"><i class="material-icons">exit_to_app</i>Desconectar</a></li>
             </ul>
@@ -216,7 +216,7 @@ background-size: 150% 300%;" >
       </div>
 </header-->
 <!--Article-->
-<article style="background: #f8f7ff;">
+<article style="background: #f8f7ff;" id="section-artigos">
   <div class="article-header">
     <div class="row" >
       <header><h2 class="center" style=" margin: 0;">ARTIGOS</h2></header>
@@ -225,34 +225,29 @@ background-size: 150% 300%;" >
       <div class="col s10 offset-s1 m3 offset-m1" id="intro-artigo">
         <div class="divider" style="margin-right: 15%;"></div>
         <h3>Destaque da Semana</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem odio delectus, expedita
-          laboriosam nostrum, praesentium, voluptate s doloribus quisquam magni nesciunt accusantium?
-          Quia corrupti reiciendis exercitationem quibusdam, nobis autem corporis! Sed.
+        <p style="margin-top: 20px;">
+          Conheça o artigo que recebeu mais destaque nessa semana. Leia e Compartilhe novas ideias.
         </p>
   
       </div>
       <!--col Destaque-->
       <div class="col s10 offset-s1 m7 offset-m1 destaque z-depth-1 "
-      style="background-color: white; margin-top:25px; max-width: 650px; height: auto;">
+      style="background: linear-gradient(45deg, #d5a8ff, #07acf8); margin-top:25px; max-width: 650px; height: auto; border-radius: 5px 25px;">
         <!--img destaque-->
-        <div class="col s10 offset-s1 m3" style="padding-top:25px" id="img-destaque">
-          <img class="responsive-img" src="https://placehold.it/250x300"/>
+        <div class="col s10 offset-s1 m3" style="padding-top:25px; width: 250px; " id="img-destaque">
+          <img class="responsive-img" src="https://placehold.it/500x600"/>
         </div>
         <!--intro destaque-->
-        <div class="col s12 m9 " id="intro-destaque">
-       
-          <div class="row">
-            <div class="col s12 m9 offset-m3">
-              <header class="destaque">
-                <h3 id="title" style="padding-top: 10%;">Tilulo do artigo</h3>
-              </header>
-              <p class="destaque" id="content" style="font-style: italic; font-size: 16px; text-align: right;">
+        <div class="row">
+          <div class="col s12 m7 " id="intro-destaque">
+            <header class="destaque">
+              <h3 id="title" style="padding: 10% 0;">Tilulo do artigo</h3>
+            </header>
+             <p class="destaque" id="content" style="font-style: italic; font-size: 16px; text-align: right; margin-right: 10%;">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, saepe! Expedita quae libero
               neque at aliquid, nisi atque cupiditate? Harum officiis beatae soluta rem perspiciatis exercit
               ationem aperiam quas eveniet unde.
-              </p>
-            </div> 
+            </p>
           </div>
         </div>
         <!--btn destaque-->
@@ -363,8 +358,8 @@ background-size: 150% 300%;" >
     </div>
   </div>
 </article><!--/Article-->
-<!--Profissionais-->
-<section  class="scrollspy" style="">
+<!--COLABORADORES-->
+<section  class="scrollspy" id="#section-colaboradores">
   <div class="bloco-header">
     <div class="row">
      <header ><h2 style="">COLABORADORES</h2></header>
@@ -375,8 +370,8 @@ background-size: 150% 300%;" >
             <div class="nav-wrapper">
               <form>
                 <div class="input-field">
-                  <input id="search" type="search"  placeholder="Filtre pelo nome"  class="autocomplete" style="border-radius: 25px;height: 55px ;">
-                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <input id="search" type="search"  placeholder="Filtre pelo nome"  class="autocomplete" style="border-radius: 25px;height: 55px ; background-color: white;">
+                  <label class="label-icon" for="search"><i class="material-icons" style="position: relative; bottom: 15px ;">search</i></label>
                   <i class="material-icons">close</i>
                 </div>
               </form>
@@ -385,18 +380,18 @@ background-size: 150% 300%;" >
         </div>  
       </div><!--/col Search -NAV AUTOCOMPLETE-->   
     </div>
-  </div><!--/head PROFISSIONAIS-->
+  </div><!--/head COLABORADORES-->
 
 
 <div class="scrollspy section-icons center">
   
-  <div id="cards-profissionais" class="row">
+  <div id="cards-colaboradores" class="row">
     <div class="container"> 
         <div id="card01">
             <div class="col s10 offset-s1 m3">
             <div class="card" >	   
               <div class="card-image">
-                <img id="photo" src="conteudo/profissionais/id-001_Ana_Clara/profile.jpg">
+                <img id="photo" src="conteudo/colaboradores/id-001_Ana_Clara/profile.jpg">
                 <a class="btn-floating halfway-fab waves-effect waves-light center" id="btn">
                 <i class="material-icons">library_books</i></a>
               </div>
@@ -410,21 +405,20 @@ background-size: 150% 300%;" >
         </div><!--/Card1-->
         <div id="card02">
             <div class="col s10 m3 offset-s1 ">
-            <div class="card white-text">	   
+            <div class="card">	   
                 <div class="card-image">
-                <img id="photo" src="conteudo/profissionais/id-002_Daniel_Villa/profile.jpg">
-                <a class="btn-floating halfway-fab modal-trigger waves-effect waves-light center" id="btn" href="#modal-daniel-monteiro">
+                <img id="photo" src="conteudo/colaboradores/id-002_Daniel_Villa/profile.jpg">
+                <a class="btn-floating halfway-fab waves-effect waves-light center" id="btn">
                 <i class="material-icons">library_books</i></a>
                 </div>
                 <div class="card-content">
-                <div class="left-align"><h6 class="card-title center">Daniel Villa</h6></div>
-                
-                <p>Psicologo</p>
-                <p>Boa Viagem - Recife/PE</p>
+                  <span class="card-title center">Daniel Villa</span>
+                  <span>Psicologa</span>
+                  <span>Boa Viagem - Recife/PE</span>
                 </div>
             </div> <!--/CARD-->
             </div><!--/col CARD-->
-           <div id="modal-card03">
+           <div id="modal-card02">
 
            </div> <!--/modal CARD2-->
         </div><!--/Card2-->
@@ -432,15 +426,14 @@ background-size: 150% 300%;" >
             <div class="col s10 m3 offset-s1">
             <div class="card white-text">	   
                 <div class="card-image">
-                <img id="photo" src="conteudo/profissionais/id-003_Carlos_Santiago/profile.jpg">
+                <img id="photo" src="conteudo/colaboradores/id-003_Carlos_Santiago/profile.jpg">
                 <a class="btn-floating halfway-fab modal-trigger waves-effect waves-light center" id="btn" href="#modal-ana-clara">
                 <i class="material-icons">library_books</i></a>
                 </div>
                 <div class="card-content">
-                <div class="left-align"><h6 class="card-title center">Carlos Thiago</h6></div>
-                
-                <p>Psicologo</p>
-                <p>Mooca - São Paulo/SP</p>
+                  <span class="card-title center">Carlos Thiago</span>
+                  <span>Psicologa</span>
+                  <span>Mooca - São Paulo/SP</span>
                 </div>
             </div> <!--/CARD-->
             </div><!--/col CARD-->
@@ -452,15 +445,14 @@ background-size: 150% 300%;" >
             <div class="col s10 m3 offset-s1 ">
             <div class="card white-text">	   
                 <div class="card-image">
-                <img id="photo" src="conteudo/profissionais/id-000_Nome_Sobrenome/profile.jpeg">
+                <img id="photo" src="conteudo/colaboradores/id-000_Nome_Sobrenome/profile.jpeg">
                 <a class="btn-floating halfway-fab modal-trigger waves-effect waves-light center modal-trigger" href="#modal-profissional" id="btn" href="#modal-ana-clara">
                 <i class="material-icons">library_books</i></a>
                 </div>
                 <div class="card-content">
-                <div class="left-align"><h6 class="card-title center">Nome SobreN</h6></div>
-                
-                <p>Psicolog@</p>
-                <p>Bairro - Cidade/UF</p>
+                  <span class="card-title center">Nome SobreN</span>
+                  <span>Psicologa</span>
+                  <span>Bairro - Cidade/UF</span>
                 </div>
             </div> <!--/CARD-->
             </div><!--/col CARD-->
@@ -468,7 +460,7 @@ background-size: 150% 300%;" >
     </div>      
 
     </div> <!--/BLOCO CARDS-->
- <!--Paginação-->
+    <!--Paginação-->
     <div class="row">
       <ul class="pagination center">
         <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
@@ -480,122 +472,110 @@ background-size: 150% 300%;" >
     </div>
        
     <div id="modal-profissional" class="modal">
-        <div class="modal-content ">
-            
-            <div class="row" id="modal-head" >
-            <div class="container">
-                <header>
-                <div class="col s12 m3 pull-m1" id="m-photo">
-                <img src="conteudo/profissionais/id-000_Nome_Sobrenome/profile.jpeg" alt="" id="user-photo" style="height: 200px;">
-                </div><!--/col photo modal-->
-
-                <div class="row">
-                <div class="col s12 m6 offset-m1" id="m-info">
-                    <h5 id="p-nome">Nome_SobreNome</h5>
-                    <p id="p-psico">Psicologo(a)</p>
-                    <p id="p-tele">81 9-8888.7777</p>
-                    <p id="p-email">Contato.Profissional@Email.com</p>
+      <div class="modal-content ">
+        <div class="row" id="modal-head" >
+          <div class="container">
+            <header>
+              <div class="col s12 m3 pull-m1" id="m-photo">
+                <img src="conteudo/colaboradores/id-000_Nome_Sobrenome/profile.jpeg" alt="" id="user-photo" style="height: 200px;">
+              </div><!--/col photo modal-->
+              <div class="row">
+                <div class="col s12 m8 offset-m1" id="m-info">
+                  <h5 id="p-nome">Nome_SobreNome</h5>
+                  <div class="divider"></div>
+                  <span id="p-psico">Psicologo(a)</span><br>
+                  <span id="p-tele">81 9-8888.7777</span><br>
+                  <span id="p-email">Contato@Email.com</span>
                 </div><!--/col info modal-->
-                </div><!--/row contato-->
-                </header>
-            </div>   
-            </div><!--/row HEAD-->
+              </div><!--/row contato-->
+            </header>
+          </div>   
+        </div><!--/row HEAD-->
         
-            <div id="modal-body">
-                <div class="row">
-                 
-                <div class="col s12 m2 offset-m1">   
-                <div class="card-panel" style="width: 15em; background-color: blueviolet; position: relative; left: 8px;" >        
-                <span>Especializações</span>
+        <div id="modal-body">
+          <div class="row">
+            <div class="col s12 m2 offset-m1">
+              <h6 id="p-especialdade" class="col m6 push-m3">Especializações</h6>  
+              <div class="card-panel" style="width: 15em; margin-top: 50px;" >        
                 <ul>
-                    <li id="item1">Especialista</li>
-                    <li id="item2">Especialista</li>
-                    <li id="item3">Especialista</li> 
-                    <li id="item4">Especialista</li>
-                    <li id="item5">Especialista</li>
+                  <li id="item1">Especialista</li>
+                  <li id="item2">Especialista</li>
+                  <li id="item3">Especialista</li> 
+                  <li id="item4">Especialista</li>
+                  <li id="item5">Especialista</li>
                 </ul>
-                 </div> 
-                </div><!--/col ESPECIALIZAÇÃO-->
-       
- 
-                    
-                <div class="col s12 m6 offset-m3">
-            
-                <span id="p-atendimento">Nome da Clinica</span>
-                <div id="imagens-local">
+              </div> 
+            </div><!--/col ESPECIALIZAÇÃO-->
 
-                <section class="container gallery-container">
+          <div class="col s12 m6 offset-m3">
+            <h6 id="p-atendimento"  class="col m8">Nome da Clinica</h6>
+            <div id="imagens-local">
+              <section class="container gallery-container">
                 <!--Slide-->
                 <div class="mySlides fade"> <!-- 01 -->
-                <img class="imgslide materialboxed" src="conteudo/profissionais/id-001_Ana_Clara/imagens/clinica-ana-clara1.jpg" alt="Imagem Consultório"/>
+                  <img class="imgslide materialboxed" src="conteudo/colaboradores/id-001_Ana_Clara/imagens/clinica-ana-clara1.jpg" alt="Imagem Consultório"/>
                 </div>
         
                 <div class="mySlides fade"> <!-- 02 -->
-                <img class="imgslide materialboxed" src="conteudo/profissionais/id-001_Ana_Clara/imagens/clinica-ana-clara2.jpg" alt="Imagem Consultório"/>
+                  <img class="imgslide materialboxed" src="conteudo/colaboradores/id-001_Ana_Clara/imagens/clinica-ana-clara2.jpg" alt="Imagem Consultório"/>
                 </div>
         
                 <div class="mySlides fade"> <!-- 03 -->
-                <img class="imgslide materialboxed"  src="conteudo/profissionais/id-001_Ana_Clara/imagens/clinica-ana-clara3.jpg" alt="Imagem Consultório"/>   
+                  <img class="imgslide materialboxed" src="conteudo/colaboradores/id-001_Ana_Clara/imagens/clinica-ana-clara3.jpg" alt="Imagem Consultório"/>   
                 </div>
                 <!--/Final Slides-->
         
                 <!--Navigation-->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </section>
-                <!--End of galery-->
-              
-                </div><!--/col atendimento modal-->
+              </section><!--End of galery-->
+            </div><!--/col atendimento modal-->
+          </div>
 
+          <div class="row">
+            <div class="col s12 m10 offset-m1">
+              <h6 id="p-localização">Localização </h6>
+              <div class="mapouter">
+                <div class="gmap_canvas ">
+                  <iframe
+                    width="600px" height="300px" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Av.%20Caxang%C3%A1%2C%203841%20-%20Iputinga%2C%20Recife%20-%20PE%2C%2050670-902&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    frameborder="1" scrolling="no" marginheight="0" marginwidth="0">
+                  </iframe>
+                  <a href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/"></a>
                 </div>
+                <style style="position: relative; ">
+                  .mapouter{position: relative;text-align:right;height:30%;width:100%;}
+                  .gmap_canvas {overflow:hidden;background:none!important;height:30%;width:100%x;}
+                </style>
+              </div>
+            </div><!--/col LOCALIZAÇÃO-->   
+          </div>
 
-                <div class="row">
-                <div class="col s12 m10 offset-m1">
-                <span>Localização </span>
+        </div><!--/Modal BODY-->
+      </div>
+    </div> <!--/MODAL CONTENT-->
+  </div><!--/Modal COLABORADORES-->
+</section> <!--/COLABORADORES-->
 
-                <div class="">
-                    <div class="mapouter">
-                    <div class="gmap_canvas ">
-                    <iframe  width="600px" height="300px" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Caxang%C3%A1%2C%203841%20-%20Iputinga%2C%20Recife%20-%20PE%2C%2050670-902&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                    frameborder="1" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    <a href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/"></a>
-                    </div>
-                        <style style="position: relative; ">
-                        .mapouter{position: relative;text-align:right;height:30%;width:100%;}
-                        .gmap_canvas {overflow:hidden;background:none!important;height:30%;width:100%x;}
-                        </style>
-                    </div>
-                </div>
-
-                </div><!--/col LOCALIZAÇÃO-->   
-                </div>
-            </div><!--/Modal BODY-->
-        
-        </div>
-    </div> <!--/MODAL PROFISSIONAL-->
-        
-    
-
-</div><!--/Modal PROFISSIONAIS-->
-
-</section> <!--/PROFISSIONAIS-->
 <!--Parceiros-->
-<section class="parceiros" style="background: #fff; padding-bottom: 25px;" >
+<section class="parceiros" style="background: #f8f7ff; padding-bottom: 25px;" >
   <header>
     <h2 class="center"> PARCEIROS</h2>
   </header>
   <div class="parceiros" id="SitesParceiros">
-    <div class= "row" style="margin: auto 5%">
-      <img class="responsive-img col s6 m3" src="img/logo-ficr.png" alt="" style="max-width: 300px;">
-      <img class="responsive-img col s6 m3" src="img/logo-cvv.png" alt="" style="max-width: 300px; height: 150px; " >
-      <img class="responsive-img col s6 m3" src="img/logo-ficr.png" alt="" style="max-width: 300px;">        <img class="responsive-img col s6 m3" src="img/logo-ficr.png" alt="" style="max-width: 300px;">
+    <div class= "row" style="margin: 0 5%">
+     <a href="https://ficr.catolica.edu.br/portal/" target="_blank"> <img class="responsive-img col s6 m3" src="img/logo-ficr.png" alt="" style="max-width: 300px;"></a>
+      <a href="https://www.cvv.org.br/" target="_blank"><img class="responsive-img col s6 m3" src="img/logo-cvv.png" alt="" style="max-width: 200px;" ></a> 
+      <a href="https://www.ubec.edu.br/" target="_blank"><img class="responsive-img col s6 m3" src="img/Logo-ubec.png" alt="" style="max-width: 300px;  position: relative; bottom: 50px; padding: 5px;"></a>
+      <a href="http://www.abrata.org.br/" target="_blank"><img class="responsive-img col s6 m3" src="img/logo-abrata.png" alt="" style="max-width: 300px;"></a> 
     </div>
   </div>
 </section>
 <!--Footer-->
-<footer class="page-footer  z-depth-2" style="background: linear-gradient(270deg, #a6e8f0, #dabcf0); ">
+<footer id="about-us" class="page-footer  z-depth-2" style="background: linear-gradient(270deg, #a6e8f0, #dabcf0); ">
   <div class="row"  style="margin: 0 5%">
-    <header><h2 style="margin-top: 0; font-size: 30px;">SOBRE NÓS</h5></header>
+    <header class="col m6 offset-m3"><h2 style="font-size: 30px; padding-bottom:50px;">SOBRE NÓS</h2></header>
     <!--info Site-->
     <div class="col s12 m4">
       <img class="logo-site" src="img/logo-site.png" alt="" style="width: 80px; position:relative; bottom: 25px;">

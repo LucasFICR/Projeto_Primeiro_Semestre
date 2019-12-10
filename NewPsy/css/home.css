@@ -5,7 +5,7 @@
 }
 body {
   font-family: "comfortaa", sans-serif;
-  background-color: #eaf1fb;
+  background-color: #ffffff;
 }
 
 h1,
@@ -41,7 +41,7 @@ header h2 {
 }
 .btn {
   text-transform: initial;
-  border-radius: 0 25px 0 25px;
+  border-radius: 5px 25px;
   background: linear-gradient(300deg, #b668ffd0, #2e5cb3);
 }
 .btn:hover {
@@ -202,34 +202,62 @@ header h2 {
   font-weight: 500;
   color: #ffffff;
 }
-/*PROFISSIONAIS*/
-#cards-profissionais .card {
-  height: 370px;
-  background: linear-gradient(to top, #ffffff, #ecebec);
-  border-radius: 0 25px;
+/*ARTIGOS*/
+.destaque,
+.destaque h3 {
+  color: #fff;
+}
+.card-reveal .card-title {
+  font-size: 26px;
+  background: -webkit-linear-gradient(#b668ff, #07acf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 300;
+  margin: 15px;
 }
 
-#cards-profissionais .card-image {
+/*COLABORADORES*/
+.card {
+  max-height: 350px;
+  background: linear-gradient(45deg, #d5a8ff, #07acf8);
+  border-radius: 5px 25px;
+}
+
+#cards-colaboradores .card-image {
   padding: 0.75rem;
 }
 .card-title {
   font-family: "Alatsi", sans-serif;
 }
-#cards-profissionais .card-content span,
+#cards-colaboradores .card-content span,
 .card-title {
-  background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
   text-align: center;
 }
-div#cards-profissionais .card img#photo {
-  max-width: 192px;
-  max-height: 192px;
-  border-radius: 0 10px;
+div#cards-colaboradores .card img#photo {
+  max-width: 300px;
+  max-height: 200px;
+  border-radius: 5px 15px;
+}
+#cards-colaboradores .btn-floating {
+  background-image: linear-gradient(45deg, #00dcf5, #8425c8);
+}
+#cards-colaboradores .btn-floating:hover {
+  background-image: linear-gradient(45deg, #8425c8, #00dcf5);
+}
+.pagination .active a {
+  background-image: linear-gradient(45deg, #00dcf5, #8425c8);
+  border-radius: 2px;
 }
 
-/*CARD PROFISSIONAIS*/
-
+/*PARCEIROS*/
+.parceiros {
+  height: 250px;
+}
+.parceiros img {
+  margin: 10px 5px;
+  padding: 10px 5px;
+}
 /*FOOTER*/
 .redes-sociais img {
   margin-bottom: 2%;
@@ -256,6 +284,9 @@ footer h6,
 }
 footer h6 {
   text-align: left;
+}
+dd {
+  margin-left: 25px;
 }
 dd a,
 footer p {
@@ -286,48 +317,63 @@ footer label {
 }
 
 /*MODAL PROFISSIONAL*/
-div#modal-profissional {
-  max-width: 50em;
+#modal-profissional {
+  border-radius: 5px;
+  background: rgb(251, 254, 255);
 }
-
-div#modal-body {
-  background-color: #374179;
+#m-photo img {
+  border-radius: 15px;
 }
-#user-photo {
-  height: 13em;
-  width: 13em;
-  position: relative;
-  border-radius: 10px;
-  padding: 10px;
+#m-info {
+  margin-top: 30px;
 }
-
-#p-psico,
-#p-tele,
-#p-email {
-  text-align: left;
-}
-div#modal-profissional span {
-  text-transform: uppercase;
+#m-info #p-nome {
+  margin-bottom: 20px;
+  font-size: 28px;
   text-align: center;
-  font-weight: 700;
-  font-family: comfortaa;
+  background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+#m-info span {
+  font-size: 18px;
+  text-align: left;
+  color: #802ece;
+
+  font-weight: 300;
+}
+.card-panel {
+  color: #802ece;
+
+  font-weight: 500;
+}
+#modal-head {
+  margin-bottom: -10px;
+}
+#modal-body {
+  background: linear-gradient(45deg, #d5a8ff, #8ad3f5);
+  border-radius: 5px 25px;
+}
+#modal-body h6 {
+  margin: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+}
+
 div#imagens-local .slides {
-  width: 200;
-  height: 100;
+  width: 150px;
+  height: 100px;
 }
-
-/*SLIDE FOTOS CLINICAS*/
-
 /* Slideshow container */
 .gallery-container {
   width: 100%;
   position: relative;
   margin: 10%;
 }
-@media (min-width: 10em) {
+@media (min-width: 9em) {
   .gallery-container {
-    width: 20em;
+    width: 19em;
     margin: auto;
   }
 }
@@ -343,39 +389,39 @@ div#imagens-local .slides {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 60%;
+  top: 65%;
   width: auto;
-  margin-top: -40px;
+  margin-top: -30px;
   padding: 10px;
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  background-color: rgba(248, 213, 17, 0.733);
+  background: linear-gradient(300deg, #b668ffd0, #2e5cb3);
 }
 
 /* Position the "next button" to the right */
 .next {
-  left: 15rem;
-  border-radius: 0 3px 3px 0;
+  left: 14rem;
+  border-radius: 25px;
 }
 .prev {
-  right: 19rem;
-  border-radius: 3px 0 0 3px;
+  right: 17.5rem;
+  border-radius: 25px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(11, 15, 243, 0.774);
+  background-image: linear-gradient(45deg, #00dcf5, #8425c8);
 }
 
 /* Caption text */
 
 .imgslide {
-  width: 16em;
-  height: 11em;
+  width: 15.5em;
+  height: 10em;
   margin-top: 20px;
   margin-bottom: 20px;
 }
