@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PsyChat</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/home.css"
+      media="screen,projection"
+    />
+    <style>
+      ::-webkit-scrollbar {
+        width: 16px;
+      }
+      ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 25px;
+        background-image: linear-gradient(45deg, #00dcf5, #8425c8);
+        -webkit-box-shadow: rgba(95, 16, 241, 0.342);
+      }
+
+      header h3 {
+        font-family: "Alatsi", sans-serif;
+        text-transform: uppercase;
+        background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.5rem;
+        font-weight: 300;
+        padding-top: 15px;
+      }
+
+      dd {
+        font-weight: 900;
+        color: rgb(10, 148, 240);
+      }
+      dd span {
+        color: blueviolet;
+        text-align: right;
+        margin-left: 20px;
+      }
+    </style>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+  </head>
+  <body
+    style=" background: linear-gradient(270deg, #00dcf5, #b151f5);
+background-size: 150% 150%;"
+  >
+    <!--Navbar-->
+    <nav class="z-depth-2" id="scroll-nav">
+      <div class="nav-wrapper">
+        <!--LOGO-->
+        <div class="col s12 m3 " id="menu-mobile">
+          <a
+            href="#"
+            class="brand-logo"
+            style=" color: #8425c8; font-weight: 900; "
+            ><img src="img/logo-site.png" alt="" height="70px"
+          /></a>
+          <a
+            href="#"
+            data-target="mobile-demo"
+            class="left sidenav-trigger "
+            style=" color: #8425c8;"
+          >
+            <i class="material-icons">menu</i></a
+          >
+        </div>
+        <!--NAV DESKTOP-->
+        <div class="row">
+          <div class="col m6 offset-m1 hide-on-med-and-down">
+            <ul id="nav-mobile" class="left">
+              <li><a href="home.html">ARTIGOS</a></li>
+              <li><a href="home.html">COLABORADORES</a></li>
+              <li><a href="home.html">APOIADORES</a></li>
+            </ul>
+          </div>
+          <!--col USUÁRIO-->
+          <div
+            class="col m3 right hide-on-med-and-down btn waves-light z-depth-5"
+            id="nav-login"
+          >
+            <ul>
+              <li>
+                <div
+                  class="dropdown-trigger"
+                  href="#!"
+                  data-target="drop-menu"
+                  id="user-name"
+                >
+                  André Martins<i class="material-icons right"
+                    >arrow_drop_down</i
+                  >
+                  <!--STATUS-->
+                  <span id="user-status"
+                    ><i class="material-icons left">blur_on</i> Online</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--DROPDONW-->
+          <ul id="drop-menu" class="dropdown-content">
+            <li>
+              <a href="#"
+                ><i class="material-icons">perm_identity</i>Visualizar Perfil</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="material-icons">chat</i>Configurar Chat</a>
+            </li>
+            <li>
+              <a href="forgotpass.html"
+                ><i class="material-icons">vpn_key</i> Redefinir Senha</a
+              >
+            </li>
+            <div class="divider"></div>
+            <li id="dropdown-exit">
+              <a href="index.html"
+                ><i class="material-icons">exit_to_app</i>Desconectar</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="z-depth-3 hide-on-med-and-down"
+      style="margin: 5% 25% ; background-color: #f8f7ff; border-radius: 5px 25px; height: 400px;"
+    >
+      <div class="row" style="padding: 10px;">
+        <div class="col s12 m8 offset-m2">
+          <header>
+            <h3 style="font-family: comfortaa;">Visualizar Perfil</h3>
+          </header>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col m6 left" style="margin-left: 10%;">
+          <div class="row">
+            <img
+              src="img/profile.jpg"
+              alt=""
+              style="height: 200px; border-radius: 20px 60px;"
+            />
+          </div>
+          <div class="row">
+            <span
+              style="margin-left: 15%; font-weight: 900; color: rgb(10, 148, 240);"
+              >Avaliação: 4.6</span
+            >
+          </div>
+        </div>
+        <div
+          class="col m6 right"
+          style="position: relative; bottom: 260px; right: 35px;"
+        >
+          <dl>
+            <dt style="font-size: 3rem;">André Martins</dt>
+            <dd>Instituição: <span>FICR</span></dd>
+            <dd>Matrícula: <span>FR0808008</span></dd>
+            <div class="divider" style="width: 60%;"></div>
+            <dd>Conversas Concluídas: <span>67</span></dd>
+            <dd>Total de Horas: <span>20h 49min</span></dd>
+            <dd>Último Chat: <span>13/12/2019</span></dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!--SCRIPT-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/auto.js"></script>
+  </body>
+</html>

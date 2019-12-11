@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PsyChat</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/home.css"
+      media="screen,projection"
+    />
+    <style>
+ 
+        ::-webkit-scrollbar {
+            width: 16px;
+        }     
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 25px;
+            background-image: linear-gradient(45deg, #00dcf5, #8425c8);
+            -webkit-box-shadow: rgba(95, 16, 241, 0.342);     
+        }
+         
+        .collapsible li {
+            border-radius: 25px;
+            margin: 5% auto;
+        }
+        #faqs .collapsible-header{
+            background: linear-gradient(300deg, #b668ffd0, #2e5cb3);
+            border-radius: 18px;
+            padding-bottom: 10px;
+            font-size: 18px;
+            font-weight: 300;
+            color: #f8f7ff;
+            text-transform: uppercase;
+        }
+        #faqs .collapsible-header:hover{
+            background-image: linear-gradient(45deg, #00dcf5, #8425c8);
+        }
+
+        </style>
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>     
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+   <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+</head>
+<body>
+<!--Navbar-->   
+<nav class="z-depth-2" id="scroll-nav">
+      <div class="nav-wrapper" >
+        <!--LOGO-->
+        <div class="col s12 m3 offset-s1" id="menu-mobile">
+          <a href="#" class="brand-logo" style=" color: #8425c8; font-weight: 900; "><img src="img/logo-site.png" alt="" height="70px"></a>
+          <a href="#" data-target="mobile-demo" class="left sidenav-trigger " style=" color: #8425c8;">
+            <i class="material-icons">menu</i></a
+          >
+        </div>
+        <!--NAV MOBILE-->
+        <ul class="sidenav" id="mobile-demo">
+          <div class="user-view">
+            <div class="background">
+              <img src="img/georx.png" />
+            </div>
+            <a href="#"><h6 class="center" id="name">André Martins</h6></a>
+            <a href="#"
+              ><img id="profile" class="circle center" src="img/profile.jpg"
+            /></a>
+            <span id="user-type">Estágiario</span>
+            <span id="user-status" style="color: rgba(106, 250, 49, 0.76);"
+              ><i class="material-icons left">blur_on</i> Online</span
+            >
+          </div>
+          <!--collapsible-->
+          <ul class="collapsible collapsible-accordion">
+            <!--collapsible Perfil-->
+            <li>
+              <a class="collapsible-header waves-effect waves-blue">
+                <i class="material-icons" style="color: #f8f7ff; font-size: 27px; margin-left: 18px;">perm_identity</i>
+                Visualizar Perfil<i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <span class="item-viewprofile">Instituição:</span>
+                    <span class="right" id="user-instituicao">FICR</span>
+                  </li>
+                  <li>
+                    <span class="item-viewprofile">Matrícula:</span>
+                    <span class="right" id="user-matricula">FR0808008</span>
+                  </li>
+                  <div class="divider" style="margin-left: 10%"></div>
+                  <li>
+                    <span class="item-viewprofile">Conversas Concluidas:</span>
+                    <span class="right" id="user-conversas">67</span>
+                  </li>
+                  <li>
+                    <span class="item-viewprofile">Tempo Acumulado:</span>
+                    <span class="right" id="user-timer">20°49'</span>
+                  </li>
+                  <li>
+                    <span class="item-viewprofile">Última Conversa:</span>
+                    <span class="right" id="user-last-chat">13/12/2019</span>
+                  </li>
+                </ul>
+              </div>
+            </li><!--/collapse Perfil-->
+            <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">chat</i>Configurar Chat</a></li>
+            <li><a href="forgotpass.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">vpn_key</i> Redefinir Senha</a></li>
+            <li><div class="divider" style="margin-left: 10%"></div></li>
+            <li><a href="home.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">subject</i>Artigos</a></li>
+            <li><a href="home.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">perm_contact_calendar</i>Colaboradores</a></li>
+            <li><a href="#about-us"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">tab</i>Sobre Nós</a></li>
+            <li><div class="divider" style="margin-left: 10%"></div></li>
+            <li><a href="index.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">exit_to_app</i> Desconectar</a></li>
+          </ul><!--/collapsible-->
+        </ul>       
+        <!--NAV DESKTOP-->
+        <div class="row">
+          <div class="col m7 offset-m1 hide-on-med-and-down">
+              <ul id="nav-mobile" class="left">
+                <li><a href="home.html">ARTIGOS</a></li>
+                <li><a href="home.html">COLABORADORES</a></li>
+                <li><a href="#about-us">APOIADORES</a></li>
+              </ul>
+            </div>
+            
+          <!--col USUÁRIO-->
+          <div class="col m3 right hide-on-med-and-down btn waves-light z-depth-5" id="nav-login">
+            <ul>
+              <li>
+                <div class="dropdown-trigger" href="#!" data-target="drop-menu" id="user-name">André Martins<i class="material-icons right">arrow_drop_down</i>  
+              <!--STATUS-->
+              <span id="user-status"><i class="material-icons left">blur_on</i> Online</span>
+              </div>
+              </li>
+            </ul>
+          </div>
+            <!--DROPDONW-->
+            <ul id="drop-menu" class="dropdown-content">
+              <li><a href="#"><i class="material-icons">perm_identity</i>Visualizar Perfil</a></li>
+              <li><a href="#"><i class="material-icons">chat</i>Configurar Chat</a></li>
+              <li><a href="forgotpass.html"><i class="material-icons">vpn_key</i> Redefinir Senha</a></li>
+              <div class="divider"></div>
+              <li id="dropdown-exit"><a href="index.html"><i class="material-icons">exit_to_app</i>Desconectar</a></li>
+            </ul>
+        </div>
+      </div>
+      </div>
+</nav>
+
+<section id="faqs" class="col s12 m8 offset-m2" style="margin: 5% 10%;">
+    <ul class="collapsible popout">
+        <li>
+            <div class="collapsible-header"><i class="material-icons">tab</i>Sobre o Site</div>
+            <div class="collapsible-body"><span>A vida universitária pode ser muito intensa para muitas pessoas, a intenção do site é disseminar as informações sobre a importância e acompanhamento psicológico para todas a pessoas, e possibilitar que mais pessoas tenham acesso acesso a uma ajuda psicológica. No site estagiários de psicologia podem oferecer conversas online para os usuários cadastrados, assim tirando dúvidas,realizando uma triagem para o psicólogo(a), os demais estagiários da Clínica-Escola na Instituição e auxiliar em parte do seu estágio.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">subject</i>Sobre os Artigos</div>
+            <div class="collapsible-body"><span>Quinzenalmente um novo artigo escrito profissional qualificado, descrevendo de forma simples o mundo complexo da mente humana. Assim possibilitando a todos os conhecimentos mais atuais da psicologia.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">perm_contact_calendar</i>Sobre os Colaboradores</div>
+            <div class="collapsible-body"><span>Para os usuários que desejam encontrar um psicólogo(a) próximo a sua residência, nós preparamos uma lista com vários profissionais que apoiam o projeto, escolhendo um dos profissionais, o usuário poderá além de informações de contato do psicólogo, como ver a localização de atendimento do mesmo, imagens da clínica, especializações, valores da consulta (com desconto caso for usuário do site) e avaliação de outros clientes.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">chat</i>Sobre a Conversa</div>
+            <div class="collapsible-body"><span>As conversas realizadas no site serão apenas para usuários previamente cadastrados e estagiários de psicologia da instituição de ensino. Essas conversas podem durar entre 15min, 30min e serão realizadas via Chat, Voz ou Vídeo de forma segura e privada. O objetivo dessas conversas é possibilitar o usuário um primeiro contato com a área da psicologia e assim buscar uma ajuda mais especializada caso se sinta à vontade.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">supervised_user_circle</i>Sobre os Estagiários</div>
+            <div class="collapsible-body"><span>Todo o estudante de psicologia no último período tem a necessidade de fazer um estágio obrigatório, assim todo o estagiário de psicologia da instituição além de seu estágio na clínica-escola da instituição, poderá ter seu tempo livre auxiliar os usuários do site com o acompanhamento de conversa online. Todo estagiário em sala de aula será acompanhado por um profissional, assim relatando e discutindo os melhores métodos para serem abordados na conversa online. O estagiário terá o perfil onde poderá acompanhar sua avaliação obtida nas conversas e a quantidade de horas acumuladas nas conversas no site, podendo assim oferecer um desconto em uma parte do bando de horas do estágio obrigatório.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">group_add</i>Sobre os Usuários Cadastrados</div>
+            <div class="collapsible-body"><span>Apenas alunos da instituição serão conta no site para iniciar as conversas, o cadastro do usuário será feito pela sua instituição de ensino, durante a renovação de matrícula, assim os usuários do site se manterá sempre atualizado de acordo com os membros da faculdade. Isso é importante pois assim garantimos que todos os usuários cadastrados tenham acesso ao psicólogo da instituição.</span></div>
+        </li>
+    </ul>
+        
+</section>
+<!--Footer-->
+<footer id="about-us" class="page-footer  z-depth-2" style="background: linear-gradient(270deg, #a6e8f0, #dabcf0); ">
+  <div class="row"  style="margin: 0 5%">
+    <header class="col s12 m6 offset-m3"><h2 style="font-size: 30px; padding-bottom:50px;">SOBRE NÓS</h2></header>
+    <!--info Site-->
+    <div class="col s12 m4">
+      <img class="logo-site" src="img/logo-site.png" alt="" style="width: 80px; position:relative; bottom: 25px;">
+      <p  style="position:relative; bottom: 25px; ">
+        Esse é um site criado meramente para fins estudantis, site criado por alunos de primeiro periodo 
+        da Faculdade Imaculada Conceição do Recife - FICR, cursos de Sistemas para Internet e Análise de
+        Desenvolvimento de Sistemas 2019.2.
+      </p>  
+     <div class="row" style="margin: 0; padding: 0;">
+      <div class="col s6 offset-s3">
+        <div class="redes-sociais" style="margin-top: 0; display: inline;">
+            <a href="https://www.instagram.com/"><img src="img/icones/instagram.svg" alt="Acesse nosso Instagram"></a><!--Instagram-->
+            <a href="https://www.facebook.com/"><img src="img/icones/facebook.svg" alt="Acesse nosso Facebook"></a><!--Facebook-->
+            <a href="https://www.twitter.com/"><img src="img/icones/twitter.svg" alt="Acesse nosso Twitter"></a><!--Twitter-->
+          </div>
+      </div>
+       
+     </div>
+        
+    </div>
+   
+    <!--info Sobre Nós-->
+    <div class="col s12 m4">
+      <dl>
+        <dt>Duvidas sobre o Site?</dt>
+          <dd><a href="faqs.html ">Acesse nosso FAQ</a></dd>
+          <dt>Conheça nossos desenvolvedores</dt>
+          <dd><a href="#!">Lucas Alves</a></dd>
+          <dd><a href="#!">Rafael Silva</a></dd>
+          <dd><a href="#!">Aldo Moura</a></dd>
+      </dl>
+    </div>
+    <!--col Mensagem-->
+    <div class="col s12 m4 right">
+      <h6>Nossas Novidades em um email</h6>
+      <p>Cadastre seu email abaixo e fique por dentro de todas as novidades que aparecem no site, assim você se manterá sempre atualizado.</p>
+      <div class="col s12 left">
+        <div class="input-field">
+            <input id="email" type="email" class="validate"  style="background-color: rgb(251, 251, 251); padding: 0 10px; border-radius: 0 25px;">
+            <label for="email" data-error="wrong" data-success="right" style="
+            
+            ">Seu Email</label> <a href="#" class="btn waves-effect waves-light">Inscrever-se</a>
+          </div>
+      </div>
+     
+    </div>
+  </div>
+  
+<div class="divider" style="margin: 10px auto 0 auto;"></div>
+  <div class="footer-copyright" style="
+  color: #8425c8; font-size: 14px; font-family: Alatsi">
+  
+      <div class="container">
+      © 2019 Copyright Engrenagem Digital - TODOS OS DIREITOS RESERVADOS. 
+      <a class="right" href="#!"
+       style="color: #8425c8; font-family: Alatsi" >Conheça nossos Desenvolvedores</a>
+      </div>
+    </div>
+</footer>
+
+<!--SCRIPT-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/auto.js"></script>
+  </body>
+</html>
