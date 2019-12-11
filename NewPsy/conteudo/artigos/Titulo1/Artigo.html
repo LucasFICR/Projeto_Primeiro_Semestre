@@ -16,10 +16,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     <link rel="stylesheet" href="../../../css/home.css"> 
 <style>
+  
+ 
+ ::-webkit-scrollbar {
+     width: 16px;
+ }     
+ ::-webkit-scrollbar-thumb {
+     -webkit-border-radius: 25px;
+     background-image: linear-gradient(45deg, #00dcf5, #8425c8);
+     -webkit-box-shadow: rgba(95, 16, 241, 0.342);     
+ }
+  
+ 
     body{
-        background: #efeff0;
-        
+        background: #f9f8ff;
+        /*background: #36353a*/
     }
+    
     #NavBottom {
         height: 60px;
         background: #f2f0fa;
@@ -38,11 +51,13 @@
         font-size: 2rem;
         font-weight: 300;
         text-align: left;
-        font-family: "Alatsi", sans-serif;
+        font-family: "Comfortaa", sans-serif;
     }
    article p{
        font-family: 'Roboto Slab', serif;
        text-align: justify;
+       margin: 20px 0;
+       color: #36353a;
     }
     /*CSS CARD*/
 
@@ -120,7 +135,7 @@
             </ul>       
             <!--NAV DESKTOP-->
             <div class="row">
-                <div class="col m6 offset-m1 hide-on-med-and-down">
+                <div class="hide-on-med-and-down">
                     <ul id="nav-mobile" class="left">
                     <li><a href="../../../home.html">COLABORADORES</a></li>
                     <li><a href="../../../home.html">APOIADORES</a></li>
@@ -215,21 +230,22 @@
     </div>
 </article>
    
-<aside class="col s12 m3" >
-            <div class="card responsive-img z-depth-1" style="">
-                <div class="card-image">
-                    <img src="../../profissionais/id-000_Nome_Sobrenome/profile.jpeg" style="padding: 5px; border-radius: 10px;">
-                    <a class="btn-floating halfway-fab modal-trigger waves-effect waves-light center modal-trigger" href="#modal-profissional" id="btn" href="#modal-ana-clara">
-                    <i class="material-icons">flip_to_front</i></a>
-                </div>
-                <div class="card-content">
-                    <span class="card-title black-text">Nome Sobrenome</span>
-                    <p style="">
-                    Informações sobre o profissional : I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-            </div>   
+<aside class="col s12 m3 card-panel" style="margin-top: 5%;  background-color: #f0f7ff;  padding: 15px; border-radius: 10px;">
+    <div class="redes-sociais">
+        <p style="font-weight: 500; text-align: center; font-size: 16px;">Gostou do Artigo? Compartilhe com seus amigos.</p>
+        <div class="card" style="padding: 10px; width: 200px; margin-left: 25px;">
+                <a target="_blank "href="#!"><img src="../../../img/icones/instagram.svg" alt="Compartilhe no seu Instagram"></a>
+                <a target="_blank "href="#!"><img src="../../../img/icones/facebook.svg" alt="Compartilhe no seu "></a>
+                <a target="_blank "href="#!"><img src="../../../img/icones/google-plus.svg" alt="Compartilhe no seu "></a>
+                <a target="_blank "href="#!"><img src="../../../img/icones/twitter.svg" alt="Compartilhe no seu "></a> 
+                <a target="_blank "href="#!"><img src="../../../img/icones/linkedin.svg" alt="Compartilhe no seu "></a>
+                <a target="_blank "href="#!"><img src="../../../img/icones/telegram.svg" alt="Compartilhe no seu "></a>
+                <a target="_blank "href="#!"><img src="../../../img/icones/logo-wpp.png" alt="Compartilhe no seu "></a>
+                <a target="_blank "href="#!"><img src="../../../img/icones/hangouts-chat.png" alt="Compartilhe no seu "></a>
+                
+                    
+        </div>
+    </div>
 </aside><!--/col CARD-->  
 
 </section><!--/SECTION ARTIGO-->
@@ -237,14 +253,72 @@
 
 
 <div class="PageUp">
-
+    <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
 </div>
 
-<footer class="page-footer"> 
-	<div class="footer-copyright">
-	<div class="container">© 2019.2 LucasFICR - SI<a class="grey-text text-lighten-4 right" href="#!">+ Infos</a></div>
-	</div>
-</footer><!--/FOOTER-->   
+<!--Footer-->
+<footer id="about-us" class="page-footer  z-depth-2" style="background: linear-gradient(270deg, #a6e8f0, #dabcf0); ">
+        <div class="row"  style="margin: 0 5%">
+          <header class="col m6 offset-m3"><h2 style="font-size: 30px; padding-bottom:50px;">SOBRE NÓS</h2></header>
+          <!--info Site-->
+          <div class="col s12 m4">
+            <img class="logo-site" src="../../../img/logo-site.png" alt="" style="width: 80px; position:relative; bottom: 25px;">
+            <p  style="position:relative; bottom: 25px; ">
+              Esse é um site criado meramente para fins estudantis, site criado por alunos de primeiro periodo 
+              da Faculdade Imaculada Conceição do Recife - FICR, cursos de Sistemas para Internet e Análise de
+              Desenvolvimento de Sistemas 2019.2.
+            </p>  
+           <div class="row" style="margin: 0; padding: 0;">
+            <div class="col s6 offset-s3">
+              <div class="redes-sociais" style="margin-top: 0; display: inline;">
+                  <a target="_blank "href="https://www.instagram.com/"><img src="../../../img/icones/instagram.svg" alt="Acesse nosso Instagram"></a><!--Instagram-->
+                  <a target="_blank "href="https://www.facebook.com/"><img src="../../../img/icones/facebook.svg" alt="Acesse nosso Facebook"></a><!--Facebook-->
+                  <a target="_blank "href="https://www.twitter.com/"><img src="../../../img/icones/twitter.svg" alt="Acesse nosso Twitter"></a><!--Twitter-->
+                </div>
+            </div>
+             
+           </div>
+              
+          </div>
+         
+          <!--info Sobre Nós-->
+          <div class="col s12 m4">
+            <dl>
+              <dt>Duvidas sobre o Site?</dt>
+                <dd><a href="#!">Acesse nosso FAQ</a></dd>
+                <dt>Conheça nossos desenvolvedores</dt>
+                <dd><a href="#!">Lucas Alves</a></dd>
+                <dd><a href="#!">Rafael Silva</a></dd>
+                <dd><a href="#!">Aldo Moura</a></dd>
+            </dl>
+          </div>
+          <!--col Mensagem-->
+          <div class="col s12 m4 right">
+            <h6>Nossas Novidades em um email</h6>
+            <p>Cadastre seu email abaixo e fique por dentro de todas as novidades que aparecem no site, assim você se manterá sempre atualizado.</p>
+            <div class="col s12 left">
+              <div class="input-field">
+                  <input id="email" type="email" class="validate"  style="background-color: rgb(251, 251, 251); padding: 0 10px; border-radius: 0 25px;">
+                  <label for="email" data-error="wrong" data-success="right" style="
+                  
+                  ">Seu Email</label> <a href="#" class="btn waves-effect waves-light">Inscrever-se</a>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+        
+      <div class="divider" style="margin: 10px auto 0 auto;"></div>
+        <div class="footer-copyright" style="
+        color: #8425c8; font-size: 14px; font-family: Alatsi">
+        
+            <div class="container">
+            © 2019 Copyright Engrenagem Digital - TODOS OS DIREITOS RESERVADOS. 
+            <a class="right" href="#!"
+             style="color: #8425c8; font-family: Alatsi" >Conheça nossos Desenvolvedores</a>
+            </div>
+          </div>
+      </footer>
 	 
 <!--SCRIPT-->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

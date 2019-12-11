@@ -51,6 +51,14 @@ header h2 {
   background-color: #2e5cb3 !important;
 }
 
+.btn-floating {
+  background: linear-gradient(300deg, #b668ffd0, #2e5cb3);
+  position: fixed;
+}
+.btn-floating:hover {
+  background-image: linear-gradient(45deg, #00dcf5, #8425c8);
+}
+
 #scroll-nav {
   height: 80px;
   background-color: #f8f7ff;

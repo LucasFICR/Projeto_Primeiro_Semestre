@@ -3,7 +3,7 @@ html {
   height: 100%;
   margin: 0;
 
-  background: linear-gradient(270deg, #00dcf5, #e2b9ff);
+  background: linear-gradient(270deg, #00dcf5, #c986f8);
   background-size: 200% 200%;
 }
 h1,
@@ -25,11 +25,11 @@ p,
 header span {
   font-family: Comfortaa;
 }
-.timer #cronometro{
+.timer #cronometro {
   font-family: alatsi;
   font-weight: 900;
   font-size: 26px;
-  color:rgb(5, 185, 80);
+  color: rgb(5, 185, 80);
   position: relative;
   left: 80px;
   bottom: 12px;
@@ -38,24 +38,20 @@ header span {
   position: relative;
   bottom: 42px;
   left: 50px;
-  
-
 }
-.timer .preloader-wrapper{
+.timer .preloader-wrapper {
   position: relative;
   top: 10px;
   left: 23px;
-  
 }
-.timer .progress{
-   height: 10px;  
-   background-color: rgb(248, 248, 248);
-   position: relative;
-   bottom: 0px;
-   margin-bottom: 40px
-
+.timer .progress {
+  height: 10px;
+  background-color: rgb(248, 248, 248);
+  position: relative;
+  bottom: 0px;
+  margin-bottom: 40px;
 }
-.timer .progress .determinate{
+.timer .progress .determinate {
   width: 99%;
   background-color: rgb(5, 185, 20);
 }

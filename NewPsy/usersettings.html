@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PsyChat</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/home.css"
+      media="screen,projection"
+    />
+    <style>
+ 
+        ::-webkit-scrollbar {
+            width: 16px;
+        }     
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 25px;
+            background-image: linear-gradient(45deg, #00dcf5, #8425c8);
+            -webkit-box-shadow: rgba(95, 16, 241, 0.342);     
+        }
+
+        form p { display: inline; margin: 5%;}
+        form{
+            text-align: center;
+            margin: 2%;
+        }
+        h5{
+          background: -webkit-linear-gradient(50deg, #00dcf5, #8425c8);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .switch{
+          margin: 2%;
+        }
+        .switch span, form span{
+          font-size: 1rem; 
+          color: #0992ee;
+          font-weight: 900;
+          
+        }
+       
+        header h3{
+          font-family: "Alatsi", sans-serif;
+          text-transform: uppercase;
+          background: -webkit-linear-gradient(#b668ffd0, #2e5cb3);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 2.5rem;
+          font-weight: 300;
+          padding-top: 15px;
+        }
+        </style>
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>     
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+   <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+</head>
+<body style=" background: linear-gradient(270deg, #00dcf5, #b151f5);
+background-size: 150% 150%;">
+<!--Navbar-->   
+<nav class="z-depth-2" id="scroll-nav">
+      <div class="nav-wrapper" >
+        <!--LOGO-->
+        <div class="col s12 m3 " id="menu-mobile">
+          <a href="#" class="brand-logo" style=" color: #8425c8; font-weight: 900; "><img src="img/logo-site.png" alt="" height="70px"></a>
+          <a href="#" data-target="mobile-demo" class="left sidenav-trigger " style=" color: #8425c8;">
+            <i class="material-icons">menu</i></a
+          >
+        </div>
+        <!--NAV MOBILE-->
+        <ul class="sidenav" id="mobile-demo">
+          <div class="user-view">
+            <div class="background">
+              <img src="img/georx.png" />
+            </div>
+            <a href="#"><h6 class="center" id="name">Beatriz Germano</h6></a>
+            <a href="#"
+              ><img id="profile" class="circle center" src="img/profile.jpg"
+            /></a>
+            <span id="user-type">Aluna</span>
+            
+          </div>
+          <!--collapsible-->
+          
+            <li><a href="#"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">chat</i>Configurar Chat</a></li>
+            <li><a href="forgotpass.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">vpn_key</i> Redefinir Senha</a></li>
+            <li><div class="divider" style="margin-left: 10%"></div></li>
+            <li><a href="home-user.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">subject</i>Artigos</a></li>
+            <li><a href="home-user.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">perm_contact_calendar</i>Colaboradores</a></li>
+            <li><a href="home-user.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">tab</i>Sobre Nós</a></li>
+            <li><div class="divider" style="margin-left: 10%"></div></li>
+            <li><a href="index.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">exit_to_app</i> Desconectar</a></li>
+          </ul><!--/collapsible-->
+        </ul>       
+        <!--NAV DESKTOP-->
+        <div class="row">
+          <div class="col m6 offset-m1 hide-on-med-and-down">
+              <ul id="nav-mobile" class="left">
+                <li><a href="home.html">ARTIGOS</a></li>
+                <li><a href="home.html">COLABORADORES</a></li>
+                <li><a href="home.html">APOIADORES</a></li>
+              </ul>
+            </div>
+            
+          <!--col USUÁRIO-->
+          <div class="col m3 right hide-on-med-and-down btn waves-light z-depth-5" id="nav-login">
+            <div class="dropdown-trigger" href="#!" data-target="drop-menu" id="user-name">Beatriz Germano
+                <i style="position: relative; bottom: 45px; left: 10px;" class="material-icons right">arrow_drop_down</i>  
+            </div> 
+          </div>
+            <!--DROPDONW-->
+            <ul id="drop-menu" class="dropdown-content">
+              <li><a href="#"><i class="material-icons">chat</i>Buscar Conversa</a></li>
+              <li><a href="forgotpass.html"><i class="material-icons">vpn_key</i> Redefinir Senha</a></li>
+              <div class="divider"></div>
+              <li id="dropdown-exit"><a href="index.html"><i class="material-icons">exit_to_app</i>Desconectar</a></li>
+            </ul>
+        </div>
+      </div>
+      </div>
+</nav>
+
+<section class="z-depth-3 " style="margin: 5% 10% ; background-color: #f8f7ff; border-radius: 5px 25px;">
+    <div class="row" style="padding: 10px;">
+        <div class="col s12 m6 offset-m3">
+            <header><h3>Configurações do Chat</h3></header>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="row settings-chat">
+        <div class="col s12 m6 left">
+            <h5>Local das Conversas</h5>
+            <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Chat</span>
+                      </label>
+                    </p>
+                     <p>
+                      <label>
+                        <input type="checkbox" disabled="disabled"/>
+                        <span>Voz</span>
+                      </label>
+                    </p>
+                     <p>
+                      <label>
+                        <input type="checkbox" disabled="disabled"/>
+                        <span>Video</span>
+                      </label>
+                    </p>
+            </form>
+        </div>
+        <div class="divider hide-on-med-and-up " style="width: 50%; margin-left: 25%;"></div>
+        <div class="col s12 m6 right">
+            <h5>Tempo Disponivel</h5>
+            <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" disabled="disabled"  />
+                        <span>15 min</span>
+                      </label>
+                    </p>
+                     <p>
+                      <label>
+                        <input type="checkbox"/>
+                        <span>30 min</span>
+                      </label>
+                    </p>
+                  
+            </form>
+        </div>
+    </div>
+    <div class="divider" style="width: 50%; margin-left: 25%;"></div>
+    <div class="row settings-chat">
+        
+        <div class="col s12 m6 offset-m3 center">
+            <h5>Ativar modo Anônimo?</h5>
+            <div class="switch col s10 offset-s2 m6 offset-m3">
+                <label>
+                    <span> Não</span>
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    <span> Sim</span> 
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="divider " style="width: 40%; margin-left: 30%;"></div>
+    <div class="row">
+        <div class="col s12 m6 offset-m3 center"style="padding-top: 25px; padding-bottom:25px;">
+            <a href="#!" class="btn disabled waves-light waves-effect"> Aguarde 5 seg...</a>
+            <div class="progress"  style="width: 40%; margin-left: 30%; background: linear-gradient(270deg, #00dcf5, #b151f5); " >
+                <div class="indeterminate" style="background-color: #f8f7ff;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--SCRIPT-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/auto.js"></script>
+  </body>
+</html>
