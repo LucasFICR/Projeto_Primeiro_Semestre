@@ -3,7 +3,7 @@ html {
   height: 100%;
   margin: 0;
 
-  background: linear-gradient(270deg, #00dcf5, #c986f8);
+  background: linear-gradient(270deg, #00dcf5, #d6b5ee);
   background-size: 200% 200%;
 }
 h1,
@@ -69,9 +69,11 @@ header span {
   text-transform: initial;
   border-radius: 0 25px 0 25px;
   background: linear-gradient(300deg, #b668ffd0, #2e5cb3);
+  transition: 0.2s;
 }
 .btn:hover {
   background-image: linear-gradient(45deg, #00dcf5, #8425c8);
+  transform: scale(1.2);
 }
 /*DROPDROWN MENU*/
 .dropdown-content {
