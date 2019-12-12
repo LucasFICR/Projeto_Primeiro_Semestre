@@ -57,7 +57,8 @@
       <div class="nav-wrapper" >
         <!--LOGO-->
         <div class="col s12 m3 offset-s1" id="menu-mobile">
-          <a href="#" class="brand-logo" style=" color: #8425c8; font-weight: 900; "><img src="img/logo-site.png" alt="" height="70px"></a>
+          <a href="#" class="brand-logo">
+            <img src="img/logo-site.png" alt="" height="70px"></a>
           <a href="#" data-target="mobile-demo" class="left sidenav-trigger " style=" color: #8425c8;">
             <i class="material-icons">menu</i></a
           >
@@ -73,8 +74,8 @@
               ><img id="profile" class="circle center" src="img/profile.jpg"
             /></a>
             <span id="user-type">Estágiario</span>
-            <span id="user-status" style="color: rgba(106, 250, 49, 0.76);"
-              ><i class="material-icons left">blur_on</i> Online</span
+            <span id="user-status" style="color:rgb(230, 0, 0);"
+              ><i class="material-icons left">blur_on</i> Offline</span
             >
           </div>
           <!--collapsible-->
@@ -122,7 +123,7 @@
         </ul>       
         <!--NAV DESKTOP-->
         <div class="row">
-          <div class="col m7 offset-m1 hide-on-med-and-down">
+          <div class="col m8  hide-on-med-and-down">
               <ul id="nav-mobile" class="left">
                 <li><a href="#section-artigos">ARTIGOS</a></li>
                 <li><a href="#section-colaboradores">COLABORADORES</a></li>
@@ -136,7 +137,7 @@
               <li>
                 <div class="dropdown-trigger" href="#!" data-target="drop-menu" id="user-name">André Martins<i class="material-icons right">arrow_drop_down</i>  
               <!--STATUS-->
-              <span id="user-status"><i class="material-icons left">blur_on</i> Online</span>
+              <span id="user-status"><i class="material-icons left">blur_on</i>Offline</span>
               </div>
               </li>
             </ul>
@@ -163,9 +164,9 @@
       <ul class="slides">
         <li class="js-slide">
           <img src="img/slide/slide-home2.png" style="" alt="">
+          
           <div class="caption left-align">
             <h3 style="">O ponto de encontro para todos os que buscam compreender sobre a saúde mental </h3>
-
           </div>
         </li>
         <li class="js-slide">
@@ -182,28 +183,6 @@
     
               </div>
             </li>
-<!--
-        <li class="js-slide">
-            <img src="614609-PNJGXU-373.png" alt="">
-          <div class="caption center-align">
-            <h3>Semanalmente um novo Artigo para você</h3>
-            <lottie-player class=" hide-on-small-only" src="https://assets3.lottiefiles.com/datafiles/7U1rGDhr3RKjEj2/data.json"
-             background="transparent" speed="1"
-            style="width: 500px;" loop autoplay>  </lottie-player>
-  
-          
-          </div>
-        </li>
-      
-        <li class="js-slide">
-            <img src="614609-PNJGXU-373.png" alt="">
-          <div class="caption right-align">
-            <h3>Group & Individual Getaways</h3>
-            <lottie-player
-            src="https://assets1.lottiefiles.com/packages/lf20_DyXIVc.json"
-             background="transparent"  speed="1"  style="width: 500px;"  loop autoplay ></lottie-player>
-          </div>
-        </li>-->
       </ul>
     </section>
 <!--Article-->
@@ -383,7 +362,7 @@
   <div id="cards-colaboradores" class="row">
     <div class="container"> 
         <div id="card01">
-            <div class="col s10 offset-s1 m3">
+            <div class="col s8 offset-s2 m3">
             <div class="card" >	   
               <div class="card-image">
                 <img id="photo" src="conteudo/colaboradores/id-001_Ana_Clara/profile.jpg">
@@ -399,7 +378,7 @@
             </div><!--/col CARD-->      
         </div><!--/Card1-->
         <div id="card02">
-            <div class="col s10 m3 offset-s1 ">
+            <div class="col s8 m3 offset-s2 ">
             <div class="card">	   
                 <div class="card-image">
                 <img id="photo" src="conteudo/colaboradores/id-002_Daniel_Villa/profile.jpg">
@@ -418,7 +397,7 @@
            </div> <!--/modal CARD2-->
         </div><!--/Card2-->
         <div id="card03">
-            <div class="col s10 m3 offset-s1">
+            <div class="col s8 m3 offset-s2">
             <div class="card white-text">	   
                 <div class="card-image">
                 <img id="photo" src="conteudo/colaboradores/id-003_Carlos_Santiago/profile.jpg">
@@ -437,7 +416,7 @@
            </div> <!--/modal CARD3-->
         </div><!--/Card3-->
         <div id="card04">
-            <div class="col s10 m3 offset-s1 ">
+            <div class="col s8 m3 offset-s2 ">
             <div class="card white-text">	   
                 <div class="card-image">
                 <img id="photo" src="conteudo/colaboradores/id-000_Nome_Sobrenome/profile.jpeg">
@@ -489,7 +468,7 @@
         
         <div id="modal-body">
           <div class="row">
-            <div class="col s12 m2 offset-m1">
+            <div class="col s10 offset-s1 m2 offset-m1">
               <h6 id="p-especialdade" class="col m6 push-m3">Especializações</h6>  
               <div class="card-panel" style="width: 15em; margin-top: 50px;" >        
                 <ul>
@@ -503,8 +482,8 @@
             </div><!--/col ESPECIALIZAÇÃO-->
 
           <div class="col s12 m6 offset-m3">
-            <h6 id="p-atendimento"  class="col m8">Nome da Clinica</h6>
-            <div id="imagens-local">
+            <h6 id="p-atendimento"  class="col s12 m8">Nome da Clinica</h6>
+            <div id="imagens-local" class="col s12 ">
               <section class="container gallery-container">
                 <!--Slide-->
                 <div class="mySlides fade"> <!-- 01 -->
@@ -592,7 +571,7 @@
     <header class="col s12 m6 offset-m3"><h2 style="font-size: 30px; padding-bottom:50px;">SOBRE NÓS</h2></header>
     <!--info Site-->
     <div class="col s12 m4">
-      <img class="logo-site" src="img/logo-site.png" alt="" style="width: 80px; position:relative; bottom: 25px;">
+      <img class="logo-site responsive-img" src="img/logo-site.png" alt="" style="width:300px; height: 100px; margin-left: 9%; position:relative;bottom: 25px;">
       <p  style="position:relative; bottom: 25px; ">
         Esse é um site criado meramente para fins estudantis, site criado por alunos de primeiro periodo 
         da Faculdade Imaculada Conceição do Recife - FICR, cursos de Sistemas para Internet e Análise de
@@ -614,7 +593,7 @@
     <!--info Sobre Nós-->
     <div class="col s12 m4">
       <dl>
-        <dt>Duvidas sobre o Site?</dt>
+        <dt>Dúvidas sobre o Site?</dt>
           <dd><a href="faqs.html">Acesse nosso FAQ</a></dd>
           <dt>Conheça nossos desenvolvedores</dt>
           <dd><a target="_blank" href="https://www.linkedin.com/in/lucas-alves-2b653515b/">Lucas Alves</a></dd>
