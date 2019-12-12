@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PsyChat</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/home.css"
+      media="screen,projection"
+    />
+    <style>
+ 
+        ::-webkit-scrollbar {
+            width: 16px;
+        }     
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 25px;
+            background-image: linear-gradient(45deg, #00dcf5, #8425c8);
+            -webkit-box-shadow: rgba(95, 16, 241, 0.342);     
+        }
+         
+        </style>
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>     
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+   <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+</head>
+<body>
+<!--Navbar-->   
+<nav class="z-depth-2" id="scroll-nav">
+      <div class="nav-wrapper" >
+        <!--LOGO-->
+        <div class="col s12 m3 offset-s1" id="menu-mobile">
+          <a href="#" class="brand-logo">
+            <img src="img/logo-site.png" alt="" height="70px"></a>
+          <a href="#" data-target="mobile-demo" class="left sidenav-trigger " style=" color: #8425c8;">
+            <i class="material-icons">menu</i></a
+          >
+        </div>
+        <!--NAV MOBILE-->
+        <ul class="sidenav" id="mobile-demo">
+                <li><a href="#section-artigos">ARTIGOS</a></li>
+                <li><a href="#section-colaboradores">COLABORADORES</a></li>
+                <li><a href="#about-us">APOIADORES</a></li>
+                <div class="divider"></div>
+                <li><a href="login.html"></a></li>
+         
+        </ul>       
+        <!--NAV DESKTOP-->
+        <div class="row">
+            <div class="col m8  hide-on-med-and-down">
+              <ul id="nav-mobile" class="left">
+                <li><a href="#section-artigos">ARTIGOS</a></li>
+                <li><a href="#section-colaboradores">COLABORADORES</a></li>
+                <li><a href="#about-us">APOIADORES</a></li>
+              </ul>
+            </div>          
+            <!--col USUÁRIO-->
+            <div class="col m3 right hide-on-med-and-down btn waves-light z-depth-5" id="nav-login"
+             style="height: 50px; width: 120px; padding-bottom: 5px ;font-family: Alatsi; font-weight: 500 ;margin-top: 10px;">
+                <a class="dropdown-trigger" href="login.html"  id="user-name">LOGIN</a>
+            </div>
+        </div>
+      </div>
+      </div>
+</nav>
+  <!-- Section: Slider -->
+  <style>
+    .slides h3{
+      color: #f8f7ff; font-size: 40px;font-family: roboto ; font-weight: 900; margin-top: 30%; text-shadow: 2px 2px #3b3737;
+    }
+  </style>
+  <section class="slider">
+      <ul class="slides">
+        <li class="js-slide">
+          <img src="img/slide/slide-home2.png" style="" alt="">
+          
+          <div class="caption left-align">
+            <h3 style="">O ponto de encontro para todos os que buscam compreender sobre a saúde mental </h3>
+          </div>
+        </li>
+        <li class="js-slide">
+            <img src="img/slide/slide-artigo.png" alt="">
+            <div class="caption right-align">
+              <h3 style="">O ponto de encontro para todos os que buscam compreender sobre a saúde mental </h3>
+  
+            </div>
+          </li>
+          <li class="js-slide">
+              <img src="img/slide/slide-chat.png" alt="">
+              <div class="caption left-align">
+                <h3 style="">Tenha seu primeiro contato com um estagiário de psicologia de forma segura e confiável</h3>
+    
+              </div>
+            </li>
+      </ul>
+    </section>
+<!--Article-->
+<article style="background: #f8f7ff;" id="section-artigos">
+  <div class="article-header">
+    <div class="row" >
+      <header><h2 class="center" style=" margin: 0;">ARTIGOS</h2></header>
+    </div>
+    <div class="row">
+      <div class="col s10 offset-s1 m3 offset-m1" id="intro-artigo">
+        <div class="divider" style="margin-right: 15%;"></div>
+        <h3>Destaque da Semana</h3>
+        <p style="margin-top: 20px;">
+          Conheça o artigo que recebeu mais destaque nessa semana. Leia e Compartilhe novas ideias.
+        </p>
+    
+            <lottie-player class=" hide-on-small-only" src="https://assets3.lottiefiles.com/datafiles/7U1rGDhr3RKjEj2/data.json"
+            background="transparent" speed="1"
+           style="width: 300px;" loop autoplay>  </lottie-player>
+       
+      </div>
+      <!--col Destaque-->
+      <div class="col s10 offset-s1 m7 offset-m1 destaque z-depth-1 "
+      style="background: linear-gradient(45deg, #d5a8ff, #07acf8); margin-top:25px; max-width: 650px; height: auto; border-radius: 5px 25px;">
+       
+        <!--intro destaque-->
+        <div class="row">
+          <div class="col s12 m8 offset-m2 " id="intro-destaque">
+            <header class="destaque">
+              <h3 id="title" style="padding: 8% 0; font-size: 2rem;">Depressão: o mal econômico do século?</h3>
+            </header>
+             <p class="destaque" id="content" style="font-style: italic; font-size: 16px; text-align: right; margin: 0, 10%;">
+              Seria a depressão o câncer do século 21? Esse foi um dos tópicos do Fórum Econômico Mundial de 2018, na Suíça.
+              A conclusão foi que a doença, apesar de não ser mortal como um tumor maligno, é cada vez mais comum e tem consequências
+              devastadoras, parecidas com as de diversos tipos de câncer no século 20.1
+            </p>
+          </div>
+        </div>
+        <!--btn destaque-->
+        <div class="row destaque">
+          <a href="conteudo/artigos/Titulo1/Artigo.html" class="col s10 offset-s1 m6 offset-m3 btn waves-effect waves-light z-depth-3">Conteúdo Completo</a>
+        </div>
+      </div><!--/col Destaque-->
+    </div>
+  </div>
+  <!--article body-->
+  <div class="article-body"> 
+    
+    <!--card artigos-->
+    <div class="row">
+      <!--col Search-->
+    <div class="row" style="padding-top: 70px;">
+        <div class="col s10 m6 offset-s1 offset-m3">
+          <nav style="background: linear-gradient(320deg, #b668ffd0, #2e5cb3);border-radius: 0 25px 0 25px; height: 70px;">
+            <div class="nav-wrapper">
+              <form>
+                <div class="input-field">
+                  <input id="search" type="search" style="border-radius: 25px;height: 55px ;">
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+              </form>
+            </div>
+          </nav> 
+        </div>  
+      </div><!--/col Search-->
+      <div class="divider"></div>
+
+      <div class="container">
+        <!--Card1-->
+        <div class="col s10 offset-s1 m4" id="artigo1">
+          <div class="card z-depth-2 ">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/mindfulness.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator">Mindfulness, Atenção Plena</span>
+              <a href="#" class="col s10 offset-s1 m12 btn waves-effect waves-light z-depth-3 tooltipped"
+              data-position="bottom" data-tooltip="Texto Completo">Ler mais (...)</a>   
+            </div>
+            <div class="card-reveal">
+                <span class="card-title">MINDFULNESS<i class="material-icons right">close</i></span>
+                <p>Mindfulness é um estado de atenção plena que pode ajudar quem a pratica a lidar melhor
+                  com suas emoções e, possivelmente, aprimorar sua saúde mental.</p>
+              <div class="col s10 offset-s1 center">
+                  <a href="#" class=" btn waves-effect waves-light z-depth-3 tooltipped" data-position="bottom"
+                  data-tooltip="Texto Completo">Ler mais (...)</a>   
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Card2-->
+        <div class="col s10 offset-s1 m4" id="artigo2">
+          <div class="card z-depth-2">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/dependencia-tec.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator" style="font-size: 1.5rem">Dependência Tecnológica</span>
+              <a href="#" class="col s10 offset-s1 m12 btn waves-effect waves-light z-depth-3 tooltipped"
+              data-position="bottom" data-tooltip="Texto Completo">Ler mais (...)</a>   
+            </div>
+            <div class="card-reveal">
+                <span class="card-title">Dependência Tecnológica<i class="material-icons right">close</i></span>
+                <p>A dependência é a condição ou situação em que a criança ou adolescente não consegue se desligar de um hábito,
+                    embora a tecnologia não obrigue o usuário...</p>
+              <div class="col s10 offset-s1 center">
+                  <a href="#" class=" btn waves-effect waves-light z-depth-3 tooltipped" data-position="bottom"
+                  data-tooltip="Texto Completo">Ler mais (...)</a>   
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Card3-->
+        <div class="col s10 offset-s1 m4" id="artigo3">
+          <div class="card z-depth-2">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/burnout.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator" style="font-size: 1.5rem;">Conheça o Burnout</span>
+              <a href="#" class="col s10 offset-s1 m12 btn waves-effect waves-light z-depth-3 tooltipped"
+              data-position="bottom" data-tooltip="Texto Completo">Ler mais (...)</a>   
+            </div>
+            <div class="card-reveal">
+                <span class="card-title">Síndrome de Burnout<i class="material-icons right">close</i></span>
+                <p>esse problema no trabalho
+                    Excesso de trabalho pode provocar a síndrome do esgotamento, ou burn-out; não deixe de buscar ajuda.
+                  </p>
+              <div class="col s10 offset-s1 center">
+                  <a href="#" class=" btn waves-effect waves-light z-depth-3 tooltipped" data-position="bottom"
+                  data-tooltip="Texto Completo">Ler mais (...)</a>   
+              </div>
+            </div>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <!--Paginação-->
+    <div class="row">
+      <ul class="pagination center">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
+  </div>
+</article><!--/Article-->
+<!--COLABORADORES-->
+<section  class="scrollspy" id="section-colaboradores">
+  <div class="bloco-header">
+    <div class="row">
+     <header ><h2 style="">COLABORADORES</h2></header>
+     <!--col Search-->
+      <div class="row" style="padding-top: 2%;">
+        <div class="col s10 m6 offset-s1 offset-m3">
+          <nav style="background: linear-gradient(320deg, #b668ffd0, #2e5cb3);border-radius: 0 25px 0 25px; height: 70px;">
+            <div class="nav-wrapper">
+              <form>
+                <div class="input-field">
+                  <input id="search" type="search"  placeholder="Filtre pelo nome"  class="autocomplete" style="border-radius: 25px;height: 55px ; background-color: white;">
+                  <label class="label-icon" for="search"><i class="material-icons" style="position: relative; bottom: 15px ;">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+              </form>
+            </div>
+          </nav> 
+        </div>  
+      </div><!--/col Search -NAV AUTOCOMPLETE-->   
+    </div>
+  </div><!--/head COLABORADORES-->
+
+
+<div class="scrollspy section-icons center">
+  
+  <div id="cards-colaboradores" class="row">
+    <div class="container"> 
+        <div id="card01">
+            <div class="col s8 offset-s2 m3">
+            <div class="card" >	   
+              <div class="card-image">
+                <img id="photo" src="conteudo/colaboradores/id-001_Ana_Clara/profile.jpg">
+                <a class="btn-floating halfway-fab waves-effect waves-light center" id="btn">
+                <i class="material-icons">library_books</i></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title center">Ana Clara</span>
+                <span>Psicologa</span>
+                <span>Iputinga - Recife/PE</span>
+              </div>
+            </div> <!--/CARD-->
+            </div><!--/col CARD-->      
+        </div><!--/Card1-->
+        <div id="card02">
+            <div class="col s8 m3 offset-s2 ">
+            <div class="card">	   
+                <div class="card-image">
+                <img id="photo" src="conteudo/colaboradores/id-002_Daniel_Villa/profile.jpg">
+                <a class="btn-floating halfway-fab waves-effect waves-light center" id="btn">
+                <i class="material-icons">library_books</i></a>
+                </div>
+                <div class="card-content">
+                  <span class="card-title center">Daniel Villa</span>
+                  <span>Psicologa</span>
+                  <span>Boa Viagem - Recife/PE</span>
+                </div>
+            </div> <!--/CARD-->
+            </div><!--/col CARD-->
+           <div id="modal-card02">
+
+           </div> <!--/modal CARD2-->
+        </div><!--/Card2-->
+        <div id="card03">
+            <div class="col s8 m3 offset-s2">
+            <div class="card white-text">	   
+                <div class="card-image">
+                <img id="photo" src="conteudo/colaboradores/id-003_Carlos_Santiago/profile.jpg">
+                <a class="btn-floating halfway-fab modal-trigger waves-effect waves-light center" id="btn" href="#modal-ana-clara">
+                <i class="material-icons">library_books</i></a>
+                </div>
+                <div class="card-content">
+                  <span class="card-title center">Carlos Thiago</span>
+                  <span>Psicologa</span>
+                  <span>Mooca - São Paulo/SP</span>
+                </div>
+            </div> <!--/CARD-->
+            </div><!--/col CARD-->
+           <div id="modal-card03">
+
+           </div> <!--/modal CARD3-->
+        </div><!--/Card3-->
+        <div id="card04">
+            <div class="col s8 m3 offset-s2 ">
+            <div class="card white-text">	   
+                <div class="card-image">
+                <img id="photo" src="conteudo/colaboradores/id-000_Nome_Sobrenome/profile.jpeg">
+                <a class="btn-floating halfway-fab modal-trigger waves-effect waves-light center modal-trigger" href="#modal-profissional" id="btn" href="#modal-ana-clara">
+                <i class="material-icons">library_books</i></a>
+                </div>
+                <div class="card-content">
+                  <span class="card-title center">Nome SobreN</span>
+                  <span>Psicologa</span>
+                  <span>Bairro - Cidade/UF</span>
+                </div>
+            </div> <!--/CARD-->
+            </div><!--/col CARD-->
+        </div> <!--/Card4-->   
+    </div>      
+
+    </div> <!--/BLOCO CARDS-->
+    <!--Paginação-->
+    <div class="row">
+      <ul class="pagination center">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
+       
+    <div id="modal-profissional" class="modal">
+      <div class="modal-content ">
+        <div class="row" id="modal-head" >
+          <div class="container">
+            <header>
+              <div class="col s12 m3 pull-m1" id="m-photo">
+                <img src="conteudo/colaboradores/id-000_Nome_Sobrenome/profile.jpeg" alt="" id="user-photo" style="height: 200px;">
+              </div><!--/col photo modal-->
+              <div class="row">
+                <div class="col s12 m8 offset-m1" id="m-info">
+                  <h5 id="p-nome">Nome_SobreNome</h5>
+                  <div class="divider"></div>
+                  <span id="p-psico">Psicologo(a)</span><br>
+                  <span id="p-tele">81 9-8888.7777</span><br>
+                  <span id="p-email">Contato@Email.com</span>
+                </div><!--/col info modal-->
+              </div><!--/row contato-->
+            </header>
+          </div>   
+        </div><!--/row HEAD-->
+        
+        <div id="modal-body">
+          <div class="row">
+            <div class="col s10 offset-s1 m2 offset-m1">
+              <h6 id="p-especialdade" class="col m6 push-m3">Especializações</h6>  
+              <div class="card-panel" style="width: 15em; margin-top: 50px;" >        
+                <ul>
+                  <li id="item1">Especialista</li>
+                  <li id="item2">Especialista</li>
+                  <li id="item3">Especialista</li> 
+                  <li id="item4">Especialista</li>
+                  <li id="item5">Especialista</li>
+                </ul>
+              </div> 
+            </div><!--/col ESPECIALIZAÇÃO-->
+
+          <div class="col s12 m6 offset-m3">
+            <h6 id="p-atendimento"  class="col s12 m8">Nome da Clinica</h6>
+            <div id="imagens-local" class="col s12 "  style="position: relative; right: 8px; bottom: 20px;">
+              <section class="container gallery-container"> 
+                <!--Slide-->
+                <div class="mySlides fade"> <!-- 01 -->
+                  <img class="imgslide materialboxed" src="conteudo/colaboradores/id-001_Ana_Clara/imagens/clinica-ana-clara1.jpg" alt="Imagem Consultório"/>
+                </div>
+        
+                <div class="mySlides fade"> <!-- 02 -->
+                  <img class="imgslide materialboxed" src="conteudo/colaboradores/id-001_Ana_Clara/imagens/clinica-ana-clara2.jpg" alt="Imagem Consultório"/>
+                </div>
+        
+                <div class="mySlides fade"> <!-- 03 -->
+                  <img class="imgslide materialboxed" src="conteudo/colaboradores/id-001_Ana_Clara/imagens/clinica-ana-clara3.jpg" alt="Imagem Consultório"/>   
+                </div>
+                <!--/Final Slides-->
+        
+                <!--Navigation-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </section><!--End of galery-->
+            </div><!--/col atendimento modal-->
+          </div>
+
+          <div class="row">
+            <div class="col s12 m10 offset-m1">
+              <h6 id="p-localização">Localização </h6>
+              <div class="mapouter">
+                <div class="gmap_canvas ">
+                  <iframe
+                    width="600px" height="300px" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Av.%20Caxang%C3%A1%2C%203841%20-%20Iputinga%2C%20Recife%20-%20PE%2C%2050670-902&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    frameborder="1" scrolling="no" marginheight="0" marginwidth="0">
+                  </iframe>
+                  <a href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/"></a>
+                </div>
+                <style style="position: relative; ">
+                  .mapouter{position: relative;text-align:right;height:30%;width:100%;}
+                  .gmap_canvas {overflow:hidden;background:none!important;height:30%;width:100%x;}
+                </style>
+              </div>
+            </div><!--/col LOCALIZAÇÃO-->   
+          </div>
+
+        </div><!--/Modal BODY-->
+      </div>
+    </div> <!--/MODAL CONTENT-->
+  </div><!--/Modal COLABORADORES-->
+</section> <!--/COLABORADORES-->
+
+<!--Parceiros-->
+<section class="parceiros" style="background: #f8f7ff; padding-bottom: 25px;" >
+  <header>
+    <h2 class="center"> PARCEIROS</h2>
+  </header>
+  <div class="parceiros" id="SitesParceiros">
+    <div class= "row hide-on-small-only" style="margin: 0 5%">
+      <a href="https://ficr.catolica.edu.br/portal/" target="_blank"> <img class="responsive-img col m3" src="img/logo-ficr.png" alt="" style="max-width: 300px;"></a>
+      <a href="https://www.cvv.org.br/" target="_blank"><img class="responsive-img col m3" src="img/logo-cvv.png" alt="" style="max-width: 200px;" ></a> 
+      <a href="https://www.ubec.edu.br/" target="_blank"><img class="responsive-img col m3" src="img/Logo-ubec.png" alt="" style="max-width: 300px; position: relative; bottom: 40px;"></a>
+      <a href="http://www.abrata.org.br/" target="_blank"><img class="responsive-img col m3" src="img/logo-abrata.png" alt="" style="max-width: 300px;"></a> 
+    </div>
+    <!--parceiros mobile-->
+    <div class="row hide-on-med-and-up">
+        <a href="https://ficr.catolica.edu.br/portal/" target="_blank">
+         <img class="responsive-img col s6" src="img/logo-ficr.png" alt="">
+        </a>
+        <a href="https://www.cvv.org.br/" target="_blank">
+          <img class="responsive-img col s6" src="img/logo-cvv.png" alt="" style="width: 150px;">
+        </a> 
+    </div><!--/parceiros mobile-->
+    <!--parceiros mobile-->
+    <div class="row hide-on-med-and-up">
+        <a href="https://www.ubec.edu.br/" target="_blank">
+          <img class="responsive-img col s6" src="img/Logo-ubec.png" alt="" style="position: relative; bottom: 30px;">
+        </a>
+        <a href="http://www.abrata.org.br/" target="_blank">
+          <img class="responsive-img col s6" src="img/logo-abrata.png" alt="" style="width: 160px;">
+        </a>
+    </div><!--/parceiros mobile-->
+  </div>
+  
+</section>
+<!--Footer-->
+<footer id="about-us" class="page-footer  z-depth-2" style="background: linear-gradient(270deg, #a6e8f0, #dabcf0); ">
+  <div class="row"  style="margin: 0 5%">
+    <header class="col s12 m6 offset-m3"><h2 style="font-size: 30px; padding-bottom:50px;">SOBRE NÓS</h2></header>
+    <!--info Site-->
+    <div class="col s12 m4">
+      <img class="logo-site responsive-img" src="img/logo-site.png" alt="" style="width:300px; height: 100px; margin-left: 9%; position:relative;bottom: 40px;">
+      <p  style="position:relative; bottom: 25px; ">
+        Esse é um site criado meramente para fins estudantis, site criado por alunos de primeiro periodo 
+        da Faculdade Imaculada Conceição do Recife - FICR, cursos de Sistemas para Internet e Análise de
+        Desenvolvimento de Sistemas 2019.2.
+      </p>  
+     <div class="row" style="margin: 0; padding: 0;">
+      <div class="col s8 offset-s2">
+        <div class="redes-sociais" style="margin-top: 0; display: inline;position: relative; bottom: 20px;">
+            <a href="https://www.instagram.com/"><img src="img/icones/instagram.svg" alt="Acesse nosso Instagram"></a><!--Instagram-->
+            <a href="https://www.facebook.com/"><img src="img/icones/facebook.svg" alt="Acesse nosso Facebook"></a><!--Facebook-->
+            <a href="https://www.twitter.com/"><img src="img/icones/twitter.svg" alt="Acesse nosso Twitter"></a><!--Twitter-->
+          </div>
+      </div>
+       
+     </div>
+        
+    </div>
+   
+    <!--info Sobre Nós-->
+    <div class="col s12 m4">
+      <dl>
+        <dt>Dúvidas sobre o Site?</dt>
+          <dd><a href="faqs.html">Acesse nosso FAQ</a></dd>
+          <dt>Conheça nossos desenvolvedores</dt>
+          <dd><a target="_blank" href="https://www.linkedin.com/in/lucas-alves-2b653515b/">Lucas Alves</a></dd>
+          <dd><a target="_blank" href="https://www.linkedin.com/in/rafael-santos-b79667143/">Rafael Silva</a></dd>
+          <dd><a target="_blank" href="https://www.linkedin.com/in/aldo-moura-68580733/">Aldo Moura</a></dd>
+      </dl>
+    </div>
+    <!--col Mensagem-->
+    <div class="col s12 m4 right">
+      <h6>Nossas Novidades em um email</h6>
+      <p>Cadastre seu email abaixo e fique por dentro de todas as novidades que aparecem no site, assim você se manterá sempre atualizado.</p>
+      <div class="col s12 left">
+        <div class="input-field">
+            <input id="email" type="email" class="validate"  style="background-color: rgb(251, 251, 251); padding: 0 10px; border-radius: 0 25px;">
+            <label for="email" data-error="wrong" data-success="right" style="
+            
+            ">Seu Email</label> <a href="#" class="btn waves-effect waves-light">Inscrever-se</a>
+          </div>
+      </div>
+     
+    </div>
+  </div>
+  
+<div class="divider" style="margin: 10px auto 0 auto;"></div>
+  <div class="footer-copyright" style="
+  color: #8425c8; font-size: 14px; font-family: Alatsi">
+  
+      <div class="container">
+      © 2019 Copyright Engrenagem Digital - TODOS OS DIREITOS RESERVADOS. 
+      <a class="right" href="#!"
+       style="color: #8425c8; font-family: Alatsi" >Conheça nossos Desenvolvedores</a>
+      </div>
+    </div>
+</footer>
+
+<!--SCRIPT-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/auto.js"></script>
+  </body>
+</html>
