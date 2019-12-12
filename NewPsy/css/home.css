@@ -225,7 +225,21 @@ header h2 {
   font-weight: 300;
   margin: 15px;
 }
-
+#artigo1 img,
+#artigo2 img,
+#artigo3 img {
+  width: 220px;
+  height: 180px;
+  border-radius: 5px 25px;
+}
+#artigo1 .card,
+#artigo2 .card,
+#artigo3 .card {
+  height: 400px;
+  width: 250px;
+  border-radius: 0 25px;
+  padding: 15px;
+}
 /*COLABORADORES*/
 .card {
   max-height: 350px;
