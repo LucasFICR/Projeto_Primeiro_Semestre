@@ -54,41 +54,49 @@
 <body>
 <!--Navbar-->   
 <nav class="z-depth-2" id="scroll-nav">
-      <div class="nav-wrapper" >
-        <!--LOGO-->
-        <div class="col s12 m3 offset-s1" id="menu-mobile">
-          <a href="#" class="brand-logo">
-            <img src="img/logo-site.png" alt="" height="70px"></a>
-          <a href="#" data-target="mobile-demo" class="left sidenav-trigger " style=" color: #8425c8;">
-            <i class="material-icons">menu</i></a
-          >
+  <div class="nav-wrapper" >
+    <!--LOGO-->
+    <div class="col s12 m3 offset-s1" id="menu-mobile">
+      <a href="#" class="brand-logo">
+        <img src="img/logo-site.png" alt="" height="70px"></a>
+      <a href="#" data-target="mobile-demo" class="left sidenav-trigger " style=" color: #8425c8;">
+        <i class="material-icons">menu</i></a
+      >
+    </div>
+    <!--NAV MOBILE-->
+    
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <div style="background-color: #f8f7ff;">
+          <img src="img/logo-site.png" style="width: 200px; height: auto; margin-left: 15%; margin-top: 5%;" alt="">
         </div>
-        <!--NAV MOBILE-->
-        <ul class="sidenav" id="mobile-demo">
-                <li><a href="#section-artigos">ARTIGOS</a></li>
-                <li><a href="#section-colaboradores">COLABORADORES</a></li>
-                <li><a href="#about-us">APOIADORES</a></li>
-                <div class="divider"></div>
-                <li><a href="login.html"></a></li>
-         
-        </ul>       
-        <!--NAV DESKTOP-->
-        <div class="row">
-            <div class="col m8  hide-on-med-and-down">
-              <ul id="nav-mobile" class="left">
-                <li><a href="#section-artigos">ARTIGOS</a></li>
-                <li><a href="#section-colaboradores">COLABORADORES</a></li>
-                <li><a href="#about-us">APOIADORES</a></li>
-              </ul>
-            </div>          
-            <!--col USUÁRIO-->
-            <div class="col m3 right hide-on-med-and-down btn waves-light z-depth-5" id="nav-login"
-             style="height: 50px; width: 120px; padding-bottom: 5px ;font-family: Alatsi; font-weight: 500 ;margin-top: 10px;">
-                <a class="dropdown-trigger" href="login.html"  id="user-name">LOGIN</a>
-            </div>
+      </li>
+      <li><a href="#section-artigos"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">subject</i>Artigos</a></li>
+      <li><a href="#section-colaboradores"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">perm_contact_calendar</i>Colaboradores</a></li>
+      <li><a href="#about-us"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">tab</i>Sobre Nós</a></li>
+      <li><div class="divider" style="margin-left: 10%"></div></li>
+      <li><a href="login.html"><i class="material-icons" style="color: #f8f7ff; font-size: 27px;">input</i> Fazer Login</a></li>
+     
+    </ul>       
+    <!--NAV DESKTOP-->
+    <div class="row">
+      <div class="col m8  hide-on-med-and-down">
+          <ul id="nav-mobile" class="left">
+            <li><a href="#section-artigos">ARTIGOS</a></li>
+            <li><a href="#section-colaboradores">COLABORADORES</a></li>
+            <li><a href="#about-us">APOIADORES</a></li>
+          </ul>
         </div>
+        
+     
+      <div class="col m3 right hide-on-med-and-down btn waves-light z-depth-5"
+       style="margin-top: 1%; height: 40px; width: 200px;">
+        <a href="login.html" style="padding: 0 30%; position: relative; font-weight: 500; font-size: 24px; font-family: alatsi;">LOGIN</a>
       </div>
-      </div>
+      
+    </div>
+  </div>
+  </div>
 </nav>
   <!-- Section: Slider -->
   <style>
@@ -105,13 +113,14 @@
             <h3 style="">O ponto de encontro para todos os que buscam compreender sobre a saúde mental </h3>
           </div>
         </li>
+        <!--
         <li class="js-slide">
             <img src="img/slide/slide-artigo.png" alt="">
             <div class="caption right-align">
               <h3 style="">O ponto de encontro para todos os que buscam compreender sobre a saúde mental </h3>
   
             </div>
-          </li>
+          </li>-->
           <li class="js-slide">
               <img src="img/slide/slide-chat.png" alt="">
               <div class="caption left-align">
@@ -125,44 +134,9 @@
 <article style="background: #f8f7ff;" id="section-artigos">
   <div class="article-header">
     <div class="row" >
-      <header><h2 class="center" style=" margin: 0;">ARTIGOS</h2></header>
+      <header><h2 class="center" style=" padding-top: 5%;">ARTIGOS</h2></header>
     </div>
-    <div class="row">
-      <div class="col s10 offset-s1 m3 offset-m1" id="intro-artigo">
-        <div class="divider" style="margin-right: 15%;"></div>
-        <h3>Destaque da Semana</h3>
-        <p style="margin-top: 20px;">
-          Conheça o artigo que recebeu mais destaque nessa semana. Leia e Compartilhe novas ideias.
-        </p>
     
-            <lottie-player class=" hide-on-small-only" src="https://assets3.lottiefiles.com/datafiles/7U1rGDhr3RKjEj2/data.json"
-            background="transparent" speed="1"
-           style="width: 300px;" loop autoplay>  </lottie-player>
-       
-      </div>
-      <!--col Destaque-->
-      <div class="col s10 offset-s1 m7 offset-m1 destaque z-depth-1 "
-      style="background: linear-gradient(45deg, #d5a8ff, #07acf8); margin-top:25px; max-width: 650px; height: auto; border-radius: 5px 25px;">
-       
-        <!--intro destaque-->
-        <div class="row">
-          <div class="col s12 m8 offset-m2 " id="intro-destaque">
-            <header class="destaque">
-              <h3 id="title" style="padding: 8% 0; font-size: 2rem;">Depressão: o mal econômico do século?</h3>
-            </header>
-             <p class="destaque" id="content" style="font-style: italic; font-size: 16px; text-align: right; margin: 0, 10%;">
-              Seria a depressão o câncer do século 21? Esse foi um dos tópicos do Fórum Econômico Mundial de 2018, na Suíça.
-              A conclusão foi que a doença, apesar de não ser mortal como um tumor maligno, é cada vez mais comum e tem consequências
-              devastadoras, parecidas com as de diversos tipos de câncer no século 20.1
-            </p>
-          </div>
-        </div>
-        <!--btn destaque-->
-        <div class="row destaque">
-          <a href="conteudo/artigos/Titulo1/Artigo.html" class="col s10 offset-s1 m6 offset-m3 btn waves-effect waves-light z-depth-3">Conteúdo Completo</a>
-        </div>
-      </div><!--/col Destaque-->
-    </div>
   </div>
   <!--article body-->
   <div class="article-body"> 
@@ -170,7 +144,7 @@
     <!--card artigos-->
     <div class="row">
       <!--col Search-->
-    <div class="row" style="padding-top: 70px;">
+    <div class="row" style="">
         <div class="col s10 m6 offset-s1 offset-m3">
           <nav style="background: linear-gradient(320deg, #b668ffd0, #2e5cb3);border-radius: 0 25px 0 25px; height: 70px;">
             <div class="nav-wrapper">
@@ -267,6 +241,41 @@
         <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
       </ul>
     </div>
+  </div>
+  <div class="row" style="padding-bottom: 2em;">
+    <div class="col s10 offset-s1 m8 offset-m2" id="intro-artigo">
+      <div class="divider" style="margin-right: 15%;"></div>
+      <header><h2>Artigo Destaque da Semana</h2></header>
+      <p style="margin-top: 20px; font-size: 16px; font-weight: 500; font-style: italic;" class="center" >
+        Conheça o artigo que recebeu mais destaque nessa semana. Leia e Compartilhe novas ideias.
+      </p>
+  
+        
+     
+    </div>
+    <!--col Destaque-->
+    <div class="col s10 offset-s1 m8 push-m3 destaque z-depth-1 "
+    style="background: linear-gradient(45deg, #d5a8ff, #07acf8); margin-top:25px; max-width: 650px; height: auto; border-radius: 5px 25px;">
+     
+      <!--intro destaque-->
+      <div class="row">
+        <div class="col s12 m8 offset-m2 " id="intro-destaque">
+          <header class="destaque">
+            <h3 id="title" style="padding: 8% 0; font-size: 2.2rem;">Pressão Acadêmica, o terror dos estudantes.</h3>
+          </header>
+           <p class="destaque" id="content" style="font-style: italic; font-size: 16px;  max-width: 450px; margin: 0 5%;">
+            Dentro desse processo “pré-universitário”, os estudantes sofrem uma pressão psicológica intensa tendo em vista que
+            é colocada uma grande expectativa sobre eles para o alcance da vaga. Quando finalmente conseguem alcançar esse
+            objetivo e entram na universidade, eles se desprendem da pressão que os fizeram chegar ali, mas se deparam com um
+            drama psicológico ainda maior dentro da academia. 
+          </p>
+        </div>
+      </div>
+      <!--btn destaque-->
+      <div class="row destaque">
+        <a href="conteudo/artigos/Titulo1/Artigo.html" class="col s10 offset-s1 m6 offset-m3 btn waves-effect waves-light z-depth-3">Conteúdo Completo</a>
+      </div>
+    </div><!--/col Destaque-->
   </div>
 </article><!--/Article-->
 <!--COLABORADORES-->
@@ -405,7 +414,7 @@
         
         <div id="modal-body">
           <div class="row">
-            <div class="col s10 offset-s1 m2 offset-m1">
+            <div class="col s10  m2 offset-m1">
               <h6 id="p-especialdade" class="col m6 push-m3">Especializações</h6>  
               <div class="card-panel" style="width: 15em; margin-top: 50px;" >        
                 <ul>
@@ -503,12 +512,13 @@
   
 </section>
 <!--Footer-->
-<footer id="about-us" class="page-footer  z-depth-2" style="background: linear-gradient(270deg, #a6e8f0, #dabcf0); ">
-  <div class="row"  style="margin: 0 5%">
+<footer id="about-us" class="page-footer  z-depth-2" style=" background: linear-gradient(270deg, #a6e8f0, #dabcf0); ">
+  <div class="row"  style="margin: 0 3%;">
     <header class="col s12 m6 offset-m3"><h2 style="font-size: 30px; padding-bottom:50px;">SOBRE NÓS</h2></header>
     <!--info Site-->
     <div class="col s12 m4">
-      <img class="logo-site responsive-img" src="img/logo-site.png" alt="" style="width:300px; height: 100px; margin-left: 9%; position:relative;bottom: 40px;">
+      <img class="logo-site responsive-img" src="img/logo-site.png" 
+      style="width:300px; height: 100px; margin-left: 5%; position:relative;bottom: 40px;">
       <p  style="position:relative; bottom: 25px; ">
         Esse é um site criado meramente para fins estudantis, site criado por alunos de primeiro periodo 
         da Faculdade Imaculada Conceição do Recife - FICR, cursos de Sistemas para Internet e Análise de
