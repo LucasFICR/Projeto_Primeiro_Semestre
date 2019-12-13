@@ -101,13 +101,39 @@ header span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.mensagem1 {
+  margin: 1% 2%;
+  background: linear-gradient(270deg, #aea1e6, #9e6cdf);
+  width: 750px;
+  padding: 1%;
+  border-radius: 5px 25px;
+}
+.mensagem2 {
+  margin: 1% 0;
+  margin-left: 19%;
+  background: linear-gradient(270deg, #92e4f8, #6f9ee4);
+  width: 750px;
+  padding: 1%;
+  border-radius: 25px 5px;
+}
+article span {
+  color: seashell;
+  margin: 15px 10px 2px 0;
+  text-shadow: 2px 2px 2px black;
+}
+article p {
+  color: rgb(44, 42, 42);
+  font-weight: 500;
+  padding: 0 20px;
+}
 .modal {
   background: linear-gradient(280deg, #a341ff, #00dcf5);
+  border-radius: 10px 25px;
 }
 .modal p {
   font-weight: 500;
   color: #fff;
-  margin: 0 50px;
+  margin: 0 10%;
 }
 .modal h2 {
   font-size: 36px;

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chat - PsyChat</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/chat.css"
+      media="screen,projection"
+    />
+  </head>
+  <body>
+    <section class=" hide-on-small-only chat-desktop">
+      <!--TIMER-->
+      <div class="timer">
+        <div class="row">
+          <div class="col s12 m6 offset-m3">
+            <div class="col m6 offset-m4">
+              <span id="cronometro" style="color: red;">05'</span>
+              <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-red-only ">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+              </div>
+              <!--Circulo-->
+            </div>
+            
+            <div class="row" style="padding-top: 10px;">
+              <div class="col m6 offset-m3">
+                <div class="progress" style=" background-color: rgba(233, 124, 124, 0.664);">
+                  <div class="determinate" style="width: 10%;
+                  background-color:red;">
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/TIMER-->
+      <!--CHAT-->
+      <div class="row" style="position: relative; bottom: 70px;">
+        <div
+          class="col m8 offset-m2"
+          style="background-color: #fdfdfd;
+          ;border-radius: 0 25px; height: 34em; width: 65em; margin: 0 13%;"
+        >
+          <header class="row">
+            <div class="col m4 ">
+                <h3>Conversando com: </h3> 
+            </div>
+           <span class="col m3 pull-m1" id="user-name" >Beatriz Germano</span>
+            <div class="col m1 " style="position: relative; left: 200px;">
+                <a class="waves-effect waves-light modal-trigger" href="#ModalTimer"><!--hide-on-med-and-up-->
+                <i class="material-icons">alarm_add</i> </a>
+            </div>
+            <div class="col m1" style="position: relative; left: 160px;">
+                <a class="waves-effect waves-light modal-trigger" href="#ModalPause">
+                <i class="material-icons">pause_presentation</i></a>
+            </div>
+            <div class="col m1" style="position: relative; left: 120px;">
+                <a class="waves-effect waves-light modal-trigger" href="#ModalClose">
+                <i class="material-icons">cancel</i></a>
+            </div>
+            <div class="col m1 offset-m1">
+                <a class="waves-effect waves-light modal-trigger" href="#ModalAlert">
+                <i class="material-icons">report</i></a>
+            </div>
+          </header>
+
+    <article style="">
+        <div class="mensagem1">
+            <p>
+                Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a complexidade dos estudos efetuados
+                prepara-nos para enfrentar situações atípicas decorrentes do retorno esperado a longo prazo.
+            <span class="right" style="font-weight: 900;">Beatriz Germano</span>
+            </p>      
+        </div><!--MENSAGEM-->
+        <div class="mensagem2">
+            <p>
+                A clínica mostra que o início do tratamento o limite teórico das ruturas de campo interpretativas realiza a
+                travessia da fantasia revelando-se por fim que o sofrimento em si mesmo é um gozo.
+            <span class="right" style="font-weight: 900;">André Martins</span>
+            </p>      
+        </div><!--MENSAGEM-->
+        <div class="mensagem1">
+            <p>
+                O desejo portanto, o princípio suscetível que serve de base denega a natureza do sofrimento que deixa brotar de
+                si o Homem Psicanalítico.
+            <span class="right" style="font-weight: 900;">Beatriz Germano</span>
+            </p>      
+        </div><!--MENSAGEM-->
+
+    </article>
+          <footer
+            class="row"
+            style="background:#9164c5;margin-top:  0;padding: 5px 20px 0 0; border-radius:0 0 5px 25px; position: relative; top: 3em;"
+          >
+            <div class="col m10">
+              <input
+                type="text"
+                placeholder="Digite seu mensagem ..."
+                id="send-text"
+                style="background: #f8f7ff;margin: 5px 20px 9px 36px; padding: 5px 30px; border-radius: 0 0 0 25px;
+                 font-family: 'Comfortaa', sans-serif; color: rgb(140, 65, 225);"
+              />
+            </div>
+            <a id="send"
+              href="#!"
+              style="background: linear-gradient(320deg, #af6eec, #6490e0); padding: 18px 18px 17px 18px; border-radius: 0 25px 0 0;
+               position: relative; left: 85px; top: 15px;"
+            >
+              <i class="material-icons" style="position: relative; top: 5px;"
+                >send</i
+              >
+            </a>
+            
+          </footer>
+        </div>
+      </div>
+      <!--/CHAT-->
+    </section>
+    <!--DROPDOWNS E MODALS-->
+    <div>
+     
+      <!--MODALS-->
+      <div id="ModalTimer" class="modal">
+        <div class="modal-content container">
+          <h2>ADIÇÃO DE TEMPO </h2>
+          <div class="row">
+            <p>
+            O usuário "ID_Usuário" irá receber um pedido para estender o tempo
+            em +15min, aguarde a resposta do seu pedido.
+            </p>
+            
+          </div>
+          <div class="row center">
+            <a
+              href="#"
+              class="waves-effect waves-light btn disabled modal-close"
+              >Aguarde a Resposta...</a
+            >
+            <div class="progress" style="margin-left: 15%; background: linear-gradient(270deg, #00dcf5, #b151f5); height:10px; width: 70%;">
+              <div class="indeterminate white" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/modal TIMER-->
+      <div id="ModalPause" class="modal">
+        <div class="modal-content">
+          <h2>Pausar Chat</h2>
+          <div class="row">
+            <p>
+                Caso você pause o chat, iniciará uma contagem regressiva de 5 minutos,
+                após o termino do cronometro o será enviado uma mensagem ao seu companheiro de conversa,
+                perguntando se o mesmo gostaria de por um fim ao chat.
+            </p>
+          </div>
+          <div class="row action" >
+            <a href="#!" class="waves-effect waves-light btn modal-close"
+              >Não Desejo Pausar</a
+            >
+            <a href="#ModalStop" class="waves-effect waves-light btn modal-trigger modal-close"
+              >Pausar Chat</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--/modal PAUSE-->
+      <div id="ModalStop" class="modal">
+        <div class="modal-content">
+          <h2>CRONÔMETRO</h2>
+          <div class="row">
+            <span style="font-family:alatsi;margin-left: 45%; font-weight: 500;font-size:50px; color: #fff;
+             ">4:59<span>
+               <div class="progress" style="margin-left: 15%; background: linear-gradient(270deg, #00dcf5, #b151f5); height:10px; width: 70%;">
+                <div class="indeterminate" style="background-color:#f8f7ff;"></div>
+            </div>
+          </div>
+          <div class="row action" >
+            <a href="#!" class="waves-effect waves-light btn modal-close"
+              >Retomar Chat</a
+            >
+           
+          </div>
+        </div>
+      </div>
+      <!--/modal PAUSE-->
+      <div id="ModalClose" class="modal">
+        <div class="modal-content">
+          <h2>Abandonar Chat</h2>
+          <div class="row">
+            <p>
+              Ao abandonar a conversa antes do tempo restante
+              <strong>repetidas vezes</strong> durante o dia, sua conta poderá
+              receber um afastamento de 24h da função "Iniciar Conversa".
+            </p>
+          </div>
+          <div class="row action">
+              <a href="#" class="waves-effect waves-light btn modal-close"
+              >Continuar Conversa</a
+            >
+            <a href="home.html" class="waves-effect waves-light btn"
+              >Abandonar Conversa</a
+            >
+            
+          </div>
+        </div>
+      </div>
+      <!--/modal CLOSE-->
+      <div id="ModalAlert" class="modal col s12">
+        <div class="modal-content">
+          <h2>Denunciar Usuário</h2>
+          <div class="row" >
+            <p class="">
+              Tem certeza que deseja denúnciar o usuário desta conversa? Tudo o
+              que foi comentado nesse chat, será avaliado por um psicologo da
+              instituição.
+            </p>
+          </div>
+         
+          <div class="row action">
+              <a href="#" class="waves-effect waves-light btn modal-close"
+              >Não Denúnciar</a
+            >
+            <a
+              href="#modal-filtro-denuncia"
+              class="waves-effect waves-light btn modal-trigger modal-close"
+              >Fazer Denúncia</a
+            >
+            
+          </div>
+        </div>
+      </div>
+      <!--/modal ALERT-->
+      <div id="modal-filtro-denuncia" class="modal">
+        <div class="modal-content">
+          <h2>MOTIVO DA DENÚNCIA </h2>
+          <div class="row">
+            <div class="col m6 offset-m3">
+        
+            <select class="browser-default">
+              <option value="" disabled selected>Categoria da Denúncia</option>
+              <option value="1">Abuso</option>
+              <option value="2">Fuga do Assunto</option>
+              <option value="3">Motivo 3</option>
+            </select>
+          </div>
+          </div>
+          <div class="row">
+            <form class="col s10 offset-s1">
+              <div class="row">
+                <span style="text-transform: uppercase;
+                 font: 500;font-family: Comfortaa; font-size: 18px; color:#fff ;
+                ">Descreva sua o motivo da sua denuncia denúncia</span s>
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea style="background-color: lavender;padding-left: 20px;
+                       color: #9164c5; font-family: Comfortaa; font-weight: 500;"
+                       maxlength="240" id="textarea1" class="materialize-textarea">
+
+                      </textarea>
+                      <label for="textarea1" style="padding-left: 20px;">Descrição</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </form>
+          </div>
+          <div class="row">
+            <a href="home.html" class="waves-effect waves-light btn modal-close col m4 offset-m4"
+              >Enviar Denúncia</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--/modal FILTRO DENUNCIA-->
+    </div>
+
+    <!--SCRIPT-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/chat.js"></script>
+  </body>
+</html>
