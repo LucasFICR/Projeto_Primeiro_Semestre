@@ -135,9 +135,7 @@
       <!--MODALS-->
       <div id="ModalTimer" class="modal">
         <div class="modal-content container">
-          <div class="row">
-                <i class="material-icons">alarm_add</i> </a>
-          </div>
+          <h2>ADIÇÃO DE TEMPO </h2>
           <div class="row">
             <p>
             O usuário "ID_Usuário" irá receber um pedido para estender o tempo
@@ -172,9 +170,28 @@
             <a href="#!" class="waves-effect waves-light btn modal-close"
               >Não Desejo Pausar</a
             >
-            <a href="#" class="waves-effect waves-light btn modal-close"
+            <a href="#ModalStop" class="waves-effect waves-light btn modal-trigger modal-close"
               >Pausar Chat</a
             >
+          </div>
+        </div>
+      </div>
+      <!--/modal PAUSE-->
+      <div id="ModalStop" class="modal">
+        <div class="modal-content">
+          <h2>CRONÔMETRO</h2>
+          <div class="row">
+            <span style="font-family:alatsi;margin-left: 45%; font-weight: 500;font-size:50px; color: #fff;
+             ">4:59<span>
+               <div class="progress" style="margin-left: 15%; background: linear-gradient(270deg, #00dcf5, #b151f5); height:10px; width: 70%;">
+                <div class="indeterminate" style="background-color:#f8f7ff;"></div>
+            </div>
+          </div>
+          <div class="row action" >
+            <a href="#!" class="waves-effect waves-light btn modal-close"
+              >Retomar Chat</a
+            >
+           
           </div>
         </div>
       </div>
@@ -228,39 +245,41 @@
       <!--/modal ALERT-->
       <div id="modal-filtro-denuncia" class="modal">
         <div class="modal-content">
+          <h2>MOTIVO DA DENÚNCIA </h2>
           <div class="row">
-                <i class="material-icons">report</i> </a>
+            <div class="col m6 offset-m3">
+        
+            <select class="browser-default">
+              <option value="" disabled selected>Categoria da Denúncia</option>
+              <option value="1">Abuso</option>
+              <option value="2">Fuga do Assunto</option>
+              <option value="3">Motivo 3</option>
+            </select>
+          </div>
           </div>
           <div class="row">
-            <div class="input-field col s12">
-              <select>
-                <option value="" disabled selected
-                  >Selecione uma das opções abaixo:</option
-                >
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </select>
-              <label>Categoria da Denúncia</label>
-            </div>
-          </div>
-          <div class="row">
-            <form class="col s12">
+            <form class="col s10 offset-s1">
               <div class="row">
-                <div class="input-field col s12">
-                  <textarea   style="background-color: seashell; padding:12px 25px; height: 10px;"
-                    id="textarea1"
-                    class="materialize-textarea"
-                    data-length="120"
-                    maxlength="240"
-                  ></textarea>
-                  <label style="font-size: 18px; margin-bottom: 80px;" for="textarea1">Descreva o motivo da denúncia</label>
-                </div>
+                <span style="text-transform: uppercase;
+                 font: 500;font-family: Comfortaa; font-size: 18px; color:#fff ;
+                ">Descreva sua o motivo da sua denuncia denúncia</span s>
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea style="background-color: lavender;padding-left: 20px;
+                       color: #9164c5; font-family: Comfortaa; font-weight: 500;"
+                       maxlength="240" id="textarea1" class="materialize-textarea">
+
+                      </textarea>
+                      <label for="textarea1" style="padding-left: 20px;">Descrição</label>
+                    </div>
+                  </div>
+                </form>
               </div>
             </form>
           </div>
           <div class="row">
-            <a href="#" class="waves-effect waves-light btn modal-close"
+            <a href="home.html" declass="waves-effect waves-light btn modal-close col m4 offset-m4"
               >Enviar Denúncia</a
             >
           </div>
